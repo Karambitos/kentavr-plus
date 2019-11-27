@@ -262,11 +262,14 @@ ul{
 
         margin: auto;
         max-width: 1205px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
 
         .manufacture,
         .agrochemistry,
         .food-fluid{
-            width: 100%;
+            width: 30%;
             cursor: pointer;
             margin-bottom: 10px;
 
@@ -274,7 +277,7 @@ ul{
             border-radius: 30px;
         }
         .manufacture{
-                background-image: url(/img/img-01.png);
+                background-image: url(/img/img.png);
                 background-size: contain;
                 background-position: right;
                 background-repeat: no-repeat;
@@ -293,7 +296,7 @@ ul{
         }
 
         .agrochemistry{
-                background-image: url(/img/img-01.png);
+                background-image: url(/img/img.png);
                 background-size: contain;
                 background-position: right;
                 background-repeat: no-repeat;
@@ -312,7 +315,7 @@ ul{
         }
 
         .food-fluid{
-                background-image: url(/img/img-01.png);
+                background-image: url(/img/img.png);
                 background-size: contain;
                 background-position: right;
                 background-repeat: no-repeat;
@@ -332,6 +335,7 @@ ul{
     }
 }
 .modal {
+    display: none;
     color: #fff;
     position: fixed;
     top: 0;
