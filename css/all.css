@@ -249,4 +249,52 @@ ul {
   color: #42515b;
   padding: 0 10px;
 }
+
+.modal {
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 40%;
+  background-color: #42515b;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.modal h3 {
+  padding: 20px;
+  text-align: center;
+}
+
+.modal .form .form__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.modal .form .form__conteiner .form-group {
+  max-width: 180px;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.modal .form .form__conteiner .form-group input {
+  margin: auto;
+  width: 97%;
+}
+
+.modal .form .form-group {
+  margin: auto;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.modal .form .form-group textarea {
+  max-width: 360px;
+  width: 97%;
+}
 /*# sourceMappingURL=all.css.map */
