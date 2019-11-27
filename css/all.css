@@ -147,7 +147,7 @@ ul {
 }
 
 .conteiner .promoution {
-  background: url(/img/jerrycan_PNG43701.png) top right 90%;
+  background-image: url(/img/picture1.png);
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
