@@ -5,6 +5,7 @@
 
 html {
   background-color: #272726;
+  background: linear-gradient(45deg, #020006, #091524);
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 30px;
@@ -147,7 +148,7 @@ ul {
 }
 
 .conteiner .promoution {
-  background-image: url(/img/picture1.png);
+  background-image: url(/img/bg.png);
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
@@ -167,6 +168,7 @@ ul {
 
 .conteiner .promoution h3 {
   padding: 45px;
+  color: #ffffff;
 }
 
 .conteiner .promoution p {
