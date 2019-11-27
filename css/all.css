@@ -1,0 +1,171 @@
+* {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+html {
+  background-color: #272726;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.site-contacts__item {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.conteiner {
+  max-width: 1400px;
+  margin: auto;
+  /* header */
+}
+
+.conteiner .header-conteiner {
+  max-width: 1305px;
+  margin: auto;
+  padding: 30px 15px 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.conteiner .header-conteiner .main-header-logo img {
+  width: 300px;
+}
+
+.conteiner .header-conteiner .navigation {
+  margin-left: auto;
+}
+
+.conteiner .header-conteiner .site-nav__active,
+.conteiner .header-conteiner .site-cont__active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.conteiner .header-conteiner .site-contacts a {
+  color: #0087c8;
+  text-decoration: none;
+}
+
+.conteiner .header-conteiner .site-contacts li {
+  font-size: 16px;
+  border-radius: 35px;
+  padding: 10px 20px;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.conteiner .header-conteiner .site-contacts li:hover, .conteiner .header-conteiner .site-contacts li:focus {
+  background-color: rgba(71, 72, 73, 0.3);
+}
+
+.conteiner .header-conteiner .site-contacts li:hover a, .conteiner .header-conteiner .site-contacts li:focus a {
+  color: #ffffff;
+}
+
+.conteiner .header-conteiner .site-contacts li:nth-last-child(1) {
+  border: 2px solid #0087c8;
+  border-radius: 35px;
+  padding: 15px 28px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.conteiner .header-conteiner .site-contacts li:nth-last-child(1):hover, .conteiner .header-conteiner .site-contacts li:nth-last-child(1):focus {
+  background-color: #0087c8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+.conteiner .header-conteiner .site-contacts li:nth-last-child(1):hover a, .conteiner .header-conteiner .site-contacts li:nth-last-child(1):focus a {
+  color: #ffffff;
+}
+
+.conteiner .header-conteiner .site-navigation a {
+  color: #42515b;
+  text-decoration: none;
+}
+
+.conteiner .header-conteiner .site-navigation li {
+  font-size: 16px;
+  border-radius: 35px;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.conteiner .header-conteiner .site-navigation li:hover, .conteiner .header-conteiner .site-navigation li:focus {
+  background-color: rgba(71, 72, 73, 0.3);
+}
+
+.conteiner .header-conteiner .site-navigation li:hover a, .conteiner .header-conteiner .site-navigation li:focus a {
+  color: #ffffff;
+}
+
+.conteiner .header-conteiner .site-navigation li a {
+  padding: 0 15px;
+}
+
+.conteiner .promoution {
+  background: url(/img/jerrycan_PNG43701.png) top right 90%;
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-height: 660px;
+  margin: auto;
+  max-width: 1205px;
+}
+
+.conteiner .promoution h1 {
+  font-size: 70px;
+  line-height: 100px;
+  font-weight: bold;
+  color: #0087c8;
+  padding: 45px;
+}
+
+.conteiner .promoution h3 {
+  padding: 45px;
+}
+/*# sourceMappingURL=all.css.map */

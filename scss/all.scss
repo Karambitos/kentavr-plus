@@ -1,0 +1,254 @@
+* {
+    transition: 2s;
+}
+
+$bg: rgb(39, 39, 38);
+$white: #ffffff;
+$gray: #42515b;
+$grayLink: rgba(71, 72, 73, 0.3);
+$blue: #0087c8;
+$black: #000;
+
+@mixin button ($color) {
+    border: 2px solid $color;
+    border-radius: 35px;
+    padding: 15px 28px;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center; 
+    background-color: transparent;
+    opacity: 1;
+
+    &:hover,&:focus{
+        background-color: $color;
+        box-sizing: border-box;
+        cursor: pointer;
+         a{
+            color: $white;
+        }
+    }
+}
+
+@mixin fullCollorButton ($color) {
+    border: 2px solid $color;
+    border-radius: 35px;
+    padding: 20px 38px;   
+    background-color: $color;
+
+    &:hover,&:focus{
+        border: 2px solid $color;
+        background-color: transparent;
+        box-sizing: border-box;
+         a{
+        background-color: transparent;
+        color: $blue;
+        border: none;
+        }
+    }
+    
+}
+
+// тел в header
+@mixin links ($color) { 
+    border-radius: 35px;
+    padding: 10px 20px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center; 
+    box-sizing: border-box;
+
+    &:hover,&:focus{
+        background-color: $color;
+         a{
+            color: $white;
+        }
+    }
+}
+
+// кнопки в header
+@mixin linksSmall ($color) {
+    border-radius: 35px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center; 
+    box-sizing: border-box;
+
+    &:hover,&:focus{
+        background-color: $color;
+         a{
+            color: $white;
+        }
+    }
+}
+
+html{
+    background-color: $bg;
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+}
+
+.site-contacts__item {
+    animation-iteration-count: infinite;
+}
+
+.conteiner {
+
+    max-width: 1400px;
+    margin: auto;
+
+     /* header */
+
+     .header-conteiner{
+        max-width: 1305px;
+
+        margin: auto;
+        padding: 30px 15px 5px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .main-header-logo img{
+            width: 300px;
+        }
+
+        .navigation {
+            margin-left: auto;
+        }
+
+        .site-nav__active,
+        .site-cont__active  {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .site-contacts{
+            a{
+                color: $blue;
+                text-decoration: none;
+            }
+            li{
+                font-size: 16px;
+                @include links($grayLink);
+
+                &:nth-last-child(1){
+                    @include button ($blue); 
+                }
+            }
+        }    
+
+        .site-navigation{
+            a{
+                color: $gray;
+                text-decoration: none;
+            }
+            li{
+                font-size: 16px;
+                @include linksSmall($grayLink);
+                
+                a{
+                    padding: 0 15px;
+                }
+            }
+        }
+
+        // .spinner {
+        //     box-sizing: border-box;
+        //     cursor: pointer;
+        //     z-index: 99;
+        //     height: 14px;
+        //     width: 18px;
+        //     margin: 14px 20px;
+        //     @media (min-width: 320px) {
+        //         display: block;
+        //     }
+        //     @media (min-width: 720px){
+        //             display: none;
+        //         }
+        //     .spinner-line {
+        //         transition: all 0.3s;
+        //         box-sizing: border-box;
+        //         position: absolute;
+        //         height: 2px;
+        //         width: 35px;
+        //         background-color: #000;
+        //       }
+        //       .horizontal {
+        //         transition: all 0.3s;
+        //         box-sizing: border-box;
+        //         position: relative;
+        //         float: left;
+        //         margin-top: 3px;
+        //       }
+        //       .diagonal.part-1 {
+        //         position: relative;
+        //         transition: all 0.3s;
+        //         box-sizing: border-box;
+        //         float: left;
+        //       }
+        //       .diagonal.part-2 {
+        //         transition: all 0.3s;
+        //         box-sizing: border-box;
+        //         position: relative;
+        //         float: left;
+        //         margin-top: 3px;
+        //       }
+        //       .spinner-line.active.horizontal {
+        //         transition: all 0.3s;
+        //         box-sizing: border-box;
+        //         opacity: 0;
+        //         margin-top: 0;
+        //       }
+        //       .spinner-line.active.diagonal.part-1 {
+        //         transition: all 0.3s;
+        //         box-sizing: border-box;
+        //         transform: rotate(135deg);
+        //         margin-top: 6px;
+        //       }
+        //       .spinner-line.active.diagonal.part-2 {
+        //         transition: all 0.3s;
+        //         box-sizing: border-box;
+        //         transform: rotate(-135deg);
+        //         margin-top: -4px;
+        //       }
+        // } 
+    }
+
+    .promoution {
+        background: url(/img/jerrycan_PNG43701.png) top right 90%;;
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+        width: 100%;
+        max-height: 660px;
+
+        margin: auto;
+        max-width: 1205px;
+
+        h1 {
+            font-size: 70px;
+            line-height: 100px;
+            font-weight: bold;
+            color: $blue;
+
+            padding: 45px;
+        }
+
+        h3{
+            padding: 45px;  
+        }
+    }
+}
+
