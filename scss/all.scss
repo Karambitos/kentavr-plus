@@ -245,16 +245,89 @@ ul{
             font-weight: bold;
             color: $blue;
 
-            padding: 45px;
+            padding-left: 45px;
         }
 
         h3{
-            padding: 45px;  
+            padding-left: 45px;  
             color: $white;
         }
 
         p{
             color: $gray;
+        }
+    }
+
+    .products{
+
+        margin: auto;
+        max-width: 1205px;
+
+        .manufacture,
+        .agrochemistry,
+        .food-fluid{
+            width: 100%;
+            cursor: pointer;
+            margin-bottom: 10px;
+
+            border: 8px solid black;
+            border-radius: 30px;
+        }
+        .manufacture{
+                background-image: url(/img/img-01.png);
+                background-size: contain;
+                background-position: right;
+                background-repeat: no-repeat;
+            h3{
+                font-size: 30px;
+                line-height: 50px;
+                font-weight: bold;
+                color: $blue;
+                padding-left: 45px;
+            }
+
+            p{
+                color: $gray;
+                padding: 0 10px;
+            }
+        }
+
+        .agrochemistry{
+                background-image: url(/img/img-01.png);
+                background-size: contain;
+                background-position: right;
+                background-repeat: no-repeat;
+            h3{
+                font-size: 30px;
+                line-height: 50px;
+                font-weight: bold;
+                color: $blue;
+                padding-left: 45px;
+            }
+
+            p{
+                color: $gray;
+                padding: 0 10px;
+            }
+        }
+
+        .food-fluid{
+                background-image: url(/img/img-01.png);
+                background-size: contain;
+                background-position: right;
+                background-repeat: no-repeat;
+            h3{
+                font-size: 30px;
+                line-height: 50px;
+                font-weight: bold;
+                color: $blue;
+                padding-left: 45px;
+            }
+
+            p{
+                color: $gray;
+                padding: 0 10px;
+            }
         }
     }
 }
