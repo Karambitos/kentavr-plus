@@ -4,7 +4,7 @@
 }
 
 html {
-  background: linear-gradient(45deg, #020006, #0f2035);
+  background: linear-gradient(45deg, #020006, #0f2035, #172e49);
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 30px;
@@ -350,7 +350,6 @@ ul {
 
 .main-footer {
   max-width: 1305px;
-  background: linear-gradient(45deg, #0f2035, #020006);
 }
 
 .main-footer .main-conteiner {
@@ -386,5 +385,10 @@ ul {
   text-decoration: none;
   color: #ffffff;
   cursor: pointer;
+}
+
+.main-footer .main-conteiner .map iframe {
+  width: 600px;
+  height: 450px;
 }
 /*# sourceMappingURL=all.css.map */

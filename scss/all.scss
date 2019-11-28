@@ -83,7 +83,7 @@ $black: #000;
 }
 
 html{
-    background: linear-gradient(45deg, #020006, #0f2035);
+    background: linear-gradient(45deg, #020006, #0f2035, #172e49);
     font-family: 'Roboto', sans-serif;
 
 
@@ -348,7 +348,6 @@ ul{
 
 .main-footer {
     max-width: 1305px;
-    background: linear-gradient(45deg, #0f2035, #020006);
 
     .main-conteiner{
         display: flex;
@@ -379,9 +378,17 @@ ul{
                color: $white;
                cursor: pointer;
             }
+        }   
+
+        .map{
+
+            iframe {
+                width: 600px;
+                height: 450px;
+            }
         }
-    }   
-}
+    }
+}   
 
 
 

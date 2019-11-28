@@ -10,10 +10,12 @@ $black: #000;
     color: #fff;
     position: fixed;
     top: 0;
-    left: 40%;
+    // left: 40%;
     background-color: $gray;
     margin: auto;
     margin-top: 100px;
+    width: 320px;
+    
 
         h3{
             padding: 20px;
@@ -21,8 +23,8 @@ $black: #000;
         }
 
         .form{
-            display: flex;
-            flex-wrap: wrap;
+            // display: flex;
+            // flex-wrap: wrap;
 
             .form__conteiner{
                 display: flex;

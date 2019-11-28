@@ -3,23 +3,15 @@
   color: #fff;
   position: fixed;
   top: 0;
-  left: 40%;
   background-color: #42515b;
   margin: auto;
   margin-top: 100px;
+  width: 320px;
 }
 
 .modal h3 {
   padding: 20px;
   text-align: center;
-}
-
-.modal .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .modal .form .form__conteiner {
