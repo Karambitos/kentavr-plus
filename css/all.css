@@ -151,7 +151,7 @@ ul {
 }
 
 .conteiner .promoution {
-  background-image: url(../img/bg.png);
+  background-image: url(../images/bg.png);
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
@@ -280,7 +280,7 @@ ul {
 
 .range {
   min-height: 400px;
-  background-image: url(../img/range.png);
+  background-image: url(../images/range.png);
   background-size: 45%;
   background-position: bottom right;
   background-repeat: no-repeat;
