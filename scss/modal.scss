@@ -5,17 +5,31 @@ $grayLink: rgba(71, 72, 73, 0.3);
 $blue: #0087c8;
 $black: #000;
 
+
+
+.modal__background {
+    display: none;
+    background: #000;
+    height: 100%;
+    opacity: 0.4;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
 .modal {
+    z-index: 200;
     display: none;
     color: #fff;
     position: fixed;
     top: 0;
-    // left: 40%;
-    background-color: $gray;
+    left: 40%;
+    background-color: $blue;
     margin: auto;
-    margin-top: 100px;
-    width: 320px;
-    
+    margin-top: 20%;
+
+
 
         h3{
             padding: 20px;
@@ -57,4 +71,22 @@ $black: #000;
                     }
             }
         }
+
+        .modal-form-close {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            width: 30px;
+            height: 30px;
+            font-size: 0;
+            cursor: pointer;
+            border: 0;
+            background-color: $blue;
+            border-radius: 50%;
+        }
 }
+
+
+.modal-show {
+    display: block;
+  }

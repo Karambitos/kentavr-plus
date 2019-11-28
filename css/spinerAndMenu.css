@@ -28,7 +28,7 @@
   position: absolute;
   height: 2px;
   width: 35px;
-  background-color: #000;
+  background-color: #0087c8;
 }
 
 .spinner .horizontal {
@@ -88,4 +88,34 @@
           transform: rotate(-135deg);
   margin-top: -4px;
 }
-/*# sourceMappingURL=spiner.css.map */
+
+.burger__menu {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  overflow: auto;
+  position: absolute;
+  display: none;
+  background-color: rgba(71, 72, 73, 0.93);
+  width: 250px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  margin: auto;
+}
+
+.burger__menu .site-navigation {
+  margin-top: 80px;
+}
+
+.burger__menu .site-navigation a {
+  color: #0087c8;
+  text-decoration: none;
+}
+
+.modal-show {
+  display: block;
+}
+/*# sourceMappingURL=spinerAndMenu.css.map */

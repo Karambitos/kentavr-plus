@@ -1,3 +1,5 @@
+$blue: #0087c8;
+
 .spinner {
             box-sizing: border-box;
             cursor: pointer;
@@ -17,7 +19,7 @@
                 position: absolute;
                 height: 2px;
                 width: 35px;
-                background-color: #000;
+                background-color: $blue;
               }
               .horizontal {
                 transition: all 0.3s;
@@ -58,3 +60,37 @@
                 margin-top: -4px;
               }
         } 
+
+
+.burger__menu{
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  overflow: auto;
+      
+  position: absolute;
+  display: none;
+  background-color: rgba(71, 72, 73, 0.93);
+  width: 250px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  margin: auto;
+  
+  .site-navigation{
+    margin-top: 80px;
+    
+      a{
+        color: $blue;
+        text-decoration: none;
+      }
+  }
+
+}
+
+.modal-show {
+  display: block;
+}
