@@ -83,8 +83,7 @@ $black: #000;
 }
 
 html{
-    background-color: $bg;
-    background: linear-gradient(45deg, #020006, #091524);
+    background: linear-gradient(45deg, #020006, #0f2035);
     font-family: 'Roboto', sans-serif;
 
 
@@ -106,13 +105,14 @@ ul{
 
 .conteiner {
 
-    max-width: 1400px;
+    max-width: 1305px;
     margin: auto;
 
      /* header */
 
      .header-conteiner{
         max-width: 1305px;
+        box-sizing: border-box;
 
         margin: auto;
         padding: 30px 15px 5px 15px;
@@ -165,68 +165,10 @@ ul{
                 }
             }
         }
-
-        // .spinner {
-        //     box-sizing: border-box;
-        //     cursor: pointer;
-        //     z-index: 99;
-        //     height: 14px;
-        //     width: 18px;
-        //     margin: 14px 20px;
-        //     @media (min-width: 320px) {
-        //         display: block;
-        //     }
-        //     @media (min-width: 720px){
-        //             display: none;
-        //         }
-        //     .spinner-line {
-        //         transition: all 0.3s;
-        //         box-sizing: border-box;
-        //         position: absolute;
-        //         height: 2px;
-        //         width: 35px;
-        //         background-color: #000;
-        //       }
-        //       .horizontal {
-        //         transition: all 0.3s;
-        //         box-sizing: border-box;
-        //         position: relative;
-        //         float: left;
-        //         margin-top: 3px;
-        //       }
-        //       .diagonal.part-1 {
-        //         position: relative;
-        //         transition: all 0.3s;
-        //         box-sizing: border-box;
-        //         float: left;
-        //       }
-        //       .diagonal.part-2 {
-        //         transition: all 0.3s;
-        //         box-sizing: border-box;
-        //         position: relative;
-        //         float: left;
-        //         margin-top: 3px;
-        //       }
-        //       .spinner-line.active.horizontal {
-        //         transition: all 0.3s;
-        //         box-sizing: border-box;
-        //         opacity: 0;
-        //         margin-top: 0;
-        //       }
-        //       .spinner-line.active.diagonal.part-1 {
-        //         transition: all 0.3s;
-        //         box-sizing: border-box;
-        //         transform: rotate(135deg);
-        //         margin-top: 6px;
-        //       }
-        //       .spinner-line.active.diagonal.part-2 {
-        //         transition: all 0.3s;
-        //         box-sizing: border-box;
-        //         transform: rotate(-135deg);
-        //         margin-top: -4px;
-        //       }
-        // } 
     }
+
+     /* 1st block */
+
 
     .promoution {
         background-image: url(/img/bg.png);
@@ -258,6 +200,8 @@ ul{
         }
     }
 
+     /* products */
+
     .products{
 
         margin: auto;
@@ -267,122 +211,84 @@ ul{
         justify-content: space-around;
 
         .manufacture,
-        .agrochemistry,
-        .food-fluid{
-            width: 30%;
+        .agrochemicals,
+        .food-fluid,
+        .industrial-fluid,
+        .household-chemicals,
+        .building-fluid,
+        .auto-chemicals,
+        .caps{
+            box-sizing: border-box;
+            max-width: 320px;
+            min-height: 382px;
+            width: 100%;
             cursor: pointer;
             margin-bottom: 10px;
 
-            border: 8px solid $blue;
+            border: 3px solid $blue;
             border-radius: 30px;
-        }
-        .manufacture{
-                background-image: url(/img/img.png);
-                background-size: contain;
-                background-position: right;
-                background-repeat: no-repeat;
+
             h3{
-                font-size: 30px;
-                line-height: 50px;
+                height: 66px;
+                font-size: 24px;
+                line-height: 26px;
                 font-weight: bold;
                 color: $blue;
-                padding-left: 45px;
+                text-align: center;
             }
 
             p{
+                font-size: 20px;
+                line-height: 22px;
+                font-weight: 200;
                 color: $gray;
-                padding: 0 10px;
+                padding: 0 15px;
+                text-transform: none;
             }
         }
 
-        .agrochemistry{
-                background-image: url(/img/img.png);
-                background-size: contain;
-                background-position: right;
-                background-repeat: no-repeat;
-            h3{
-                font-size: 30px;
-                line-height: 50px;
-                font-weight: bold;
-                color: $blue;
-                padding-left: 45px;
-            }
-
-            p{
-                color: $gray;
-                padding: 0 10px;
-            }
-        }
-
-        .food-fluid{
-                background-image: url(/img/img.png);
-                background-size: contain;
-                background-position: right;
-                background-repeat: no-repeat;
-            h3{
-                font-size: 30px;
-                line-height: 50px;
-                font-weight: bold;
-                color: $blue;
-                padding-left: 45px;
-            }
-
-            p{
-                color: $gray;
-                padding: 0 10px;
-            }
+        .caps{
+            background-image: url(https://static.tildacdn.com/tild3937-3538-4562-b662-346539336530/Triple_Flyer_Side_2_.png);
+            background-size: 45%;
+            background-position: bottom right;
+            background-repeat: no-repeat;   
+         }
+        .owl-nav,
+        .owl-dots {
+            display: none;
         }
     }
 }
-.modal {
-    display: none;
-    color: #fff;
-    position: fixed;
-    top: 0;
-    left: 40%;
-    background-color: $gray;
+
+/* about-us */
+.range,
+.about-us {
+    max-width: 1205px;
     margin: auto;
-    margin-top: 100px;
 
-        h3{
-            padding: 20px;
-            text-align: center;
-        }
+    h3{
+        font-size: 16px;
+        line-height: 14px;
+        font-weight: bold;
+        color: $blue;
+    }
 
-        .form{
-            // display: flex;
-            // flex-wrap: wrap;
-
-            .form__conteiner{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                margin-bottom: 10px;
-
-    
-                .form-group{
-                    max-width: 180px;
-                    width: 100%;
-                    border: 1px solid red;
-                
-                    input {
-                        margin: auto;
-                        width: 97%;
-                        
-                    }
-                } 
-            }
-
-            .form-group{
-                margin: auto;
-                width: 100%;
-                border: 1px solid red;
-
-                textarea{
-                    max-width: 360px;
-                    width: 97%;
-                    }
-            }
-        }
-
+    p{
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 200;
+        color: $gray;
+        padding: 0 15px;
+        text-transform: none;
+    }
 }
+
+.range{
+    min-height: 400px;
+    background-image: url(/img/range.png);
+    background-size: 45%;
+    background-position: bottom right;
+    background-repeat: no-repeat; 
+}
+
+
