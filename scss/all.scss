@@ -345,11 +345,13 @@ ul{
 
 .main-footer {
     max-width: 1305px;
+    margin-bottom: 40px;
 
     .main-conteiner{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        margin-bottom: 60px;
 
 
         .main-footer-conteiner {
