@@ -181,6 +181,7 @@ ul {
 
 .conteiner .products {
   margin: auto;
+  margin-top: 30px;
   max-width: 1205px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,23 +271,28 @@ ul {
   background-repeat: no-repeat;
 }
 
+.conteiner .products .owl-stage {
+  margin-bottom: 30px;
+}
+
 .conteiner .products .owl-nav,
 .conteiner .products .owl-dots {
   display: none;
 }
 
-/* about-us */
+/* other */
 .individual-orders,
 .range,
 .about-us {
   max-width: 1205px;
   margin: auto;
+  margin-bottom: 60px;
 }
 
 .individual-orders h3,
 .range h3,
 .about-us h3 {
-  font-size: 16px;
+  font-size: 30px;
   line-height: 14px;
   font-weight: bold;
   color: #0087c8;
@@ -299,7 +305,6 @@ ul {
   line-height: 28px;
   font-weight: 200;
   color: #42515b;
-  padding: 15px;
   text-transform: none;
 }
 
@@ -308,7 +313,7 @@ ul {
   background-image: url(../images/individual.png);
   background-size: 30%;
   background-position: bottom;
-  background-position-x: 80px;
+  background-position-x: 10%;
   background-repeat: no-repeat;
 }
 
@@ -327,5 +332,59 @@ ul {
 
 .range p {
   width: 50%;
+}
+
+.about-us {
+  min-height: 350px;
+  background-image: url(../images/zavod.png);
+  background-size: 40%;
+  background-position: bottom;
+  background-position-x: 10%;
+  background-repeat: no-repeat;
+}
+
+.about-us p {
+  width: 50%;
+  margin-left: auto;
+}
+
+.main-footer {
+  max-width: 1305px;
+  background: linear-gradient(45deg, #0f2035, #020006);
+}
+
+.main-footer .main-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main-footer .main-conteiner .main-footer-conteiner {
+  color: #0087c8;
+  text-transform: none;
+  display: block;
+  padding: 30px;
+}
+
+.main-footer .main-conteiner .main-footer-conteiner h3 {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.main-footer .main-conteiner .main-footer-conteiner p {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.main-footer .main-conteiner .main-footer-conteiner a {
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
 }
 /*# sourceMappingURL=all.css.map */

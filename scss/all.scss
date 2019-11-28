@@ -206,6 +206,7 @@ ul{
     .products{
 
         margin: auto;
+        margin-top: 30px;
         max-width: 1205px;
         display: flex;
         flex-wrap: wrap;
@@ -274,6 +275,10 @@ ul{
             background-position: bottom right;
             background-repeat: no-repeat;   
          }
+        .owl-stage {
+            margin-bottom: 30px;
+        }
+
         .owl-nav,
         .owl-dots {
             display: none;
@@ -281,15 +286,16 @@ ul{
     }
 }
 
-/* about-us */
+/* other */
 .individual-orders,
 .range,
 .about-us {
     max-width: 1205px;
     margin: auto;
+    margin-bottom: 60px;
 
     h3{
-        font-size: 16px;
+        font-size: 30px;
         line-height: 14px;
         font-weight: bold;
         color: $blue;
@@ -300,7 +306,6 @@ ul{
         line-height: 28px;
         font-weight: 200;
         color: $gray;
-        padding: 15px;
         text-transform: none;
     }
 }
@@ -310,7 +315,7 @@ ul{
     background-image: url(../images/individual.png);
     background-size: 30%;
     background-position: bottom;
-    background-position-x: 80px;
+    background-position-x: 10%;
     background-repeat: no-repeat;
     p{
         width: 50%;
@@ -327,5 +332,56 @@ ul{
         width: 50%;
     } 
 }
+.about-us {
+    min-height: 350px;
+    background-image: url(../images/zavod.png);
+    background-size: 40%;
+    background-position: bottom;
+    background-position-x: 10%;
+    background-repeat: no-repeat;
+    p{
+        width: 50%;
+        margin-left: auto;
+    }
+}
+// FOOTER
+
+.main-footer {
+    max-width: 1305px;
+    background: linear-gradient(45deg, #0f2035, #020006);
+
+    .main-conteiner{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+
+        .main-footer-conteiner {
+        color: $blue;
+        text-transform: none;
+        display: block;
+        padding: 30px;
+
+            h3{
+                font-size: 22px;
+                line-height: 24px;
+                font-weight: bold;
+            }
+
+            p{
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: bold;
+            }
+
+            a{
+               text-decoration: none;
+               color: $white;
+               cursor: pointer;
+            }
+        }
+    }   
+}
+
 
 
