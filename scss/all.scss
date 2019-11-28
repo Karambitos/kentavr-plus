@@ -193,6 +193,7 @@ ul{
         h3{
             padding-left: 45px;  
             color: $white;
+            padding-left: 20px;
         }
 
         p{
@@ -246,9 +247,29 @@ ul{
                 text-transform: none;
             }
         }
-
+        .manufacture{
+            background-image: url(../images/pic-color.png);
+            background-size: 25%;
+            // background-position: bottom ;
+            background-position-y: 90%;
+            background-position-x: 90%;
+            background-repeat: no-repeat; 
+        }
+        .food-fluid,
+        .industrial-fluid,
+        .household-chemicals,
+        .building-fluid,
+        .auto-chemicals,
+        .agrochemicals{
+            background-image: url(../images/pic1.png);
+            background-size: 25%;
+            background-position-y: 90%;
+            background-position-x: 90%;
+            background-repeat: no-repeat; 
+   
+        }
         .caps{
-            background-image: url(https://static.tildacdn.com/tild3937-3538-4562-b662-346539336530/Triple_Flyer_Side_2_.png);
+            background-image: url(../images/pic2.png);
             background-size: 45%;
             background-position: bottom right;
             background-repeat: no-repeat;   
@@ -279,25 +300,32 @@ ul{
         line-height: 28px;
         font-weight: 200;
         color: $gray;
-        padding: 0 15px;
+        padding: 15px;
         text-transform: none;
     }
 }
 
+.individual-orders{
+    min-height: 350px;
+    background-image: url(../images/individual.png);
+    background-size: 30%;
+    background-position: bottom;
+    background-position-x: 80px;
+    background-repeat: no-repeat;
+    p{
+        width: 50%;
+        margin-left: auto;
+    }
+}
 .range{
-    min-height: 400px;
+    min-height: 350px;
     background-image: url(../images/range.png);
     background-size: 45%;
     background-position: bottom right;
     background-repeat: no-repeat; 
-}
-
-.individual-orders{
-    min-height: 400px;
-    background-image: url(../images/individual.png);
-    background-size: 45%;
-    background-position: bottom right;
-    background-repeat: no-repeat; 
+    p{
+        width: 50%;
+    } 
 }
 
 

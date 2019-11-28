@@ -172,6 +172,7 @@ ul {
 .conteiner .promoution h3 {
   padding-left: 45px;
   color: #ffffff;
+  padding-left: 20px;
 }
 
 .conteiner .promoution p {
@@ -241,8 +242,29 @@ ul {
   text-transform: none;
 }
 
+.conteiner .products .manufacture {
+  background-image: url(../images/pic-color.png);
+  background-size: 25%;
+  background-position-y: 90%;
+  background-position-x: 90%;
+  background-repeat: no-repeat;
+}
+
+.conteiner .products .food-fluid,
+.conteiner .products .industrial-fluid,
+.conteiner .products .household-chemicals,
+.conteiner .products .building-fluid,
+.conteiner .products .auto-chemicals,
+.conteiner .products .agrochemicals {
+  background-image: url(../images/pic1.png);
+  background-size: 25%;
+  background-position-y: 90%;
+  background-position-x: 90%;
+  background-repeat: no-repeat;
+}
+
 .conteiner .products .caps {
-  background-image: url(https://static.tildacdn.com/tild3937-3538-4562-b662-346539336530/Triple_Flyer_Side_2_.png);
+  background-image: url(../images/pic2.png);
   background-size: 45%;
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -277,23 +299,33 @@ ul {
   line-height: 28px;
   font-weight: 200;
   color: #42515b;
-  padding: 0 15px;
+  padding: 15px;
   text-transform: none;
 }
 
+.individual-orders {
+  min-height: 350px;
+  background-image: url(../images/individual.png);
+  background-size: 30%;
+  background-position: bottom;
+  background-position-x: 80px;
+  background-repeat: no-repeat;
+}
+
+.individual-orders p {
+  width: 50%;
+  margin-left: auto;
+}
+
 .range {
-  min-height: 400px;
+  min-height: 350px;
   background-image: url(../images/range.png);
   background-size: 45%;
   background-position: bottom right;
   background-repeat: no-repeat;
 }
 
-.individual-orders {
-  min-height: 400px;
-  background-image: url(../images/individual.png);
-  background-size: 45%;
-  background-position: bottom right;
-  background-repeat: no-repeat;
+.range p {
+  width: 50%;
 }
 /*# sourceMappingURL=all.css.map */
