@@ -254,12 +254,14 @@ ul {
 }
 
 /* about-us */
+.individual-orders,
 .range,
 .about-us {
   max-width: 1205px;
   margin: auto;
 }
 
+.individual-orders h3,
 .range h3,
 .about-us h3 {
   font-size: 16px;
@@ -268,6 +270,7 @@ ul {
   color: #0087c8;
 }
 
+.individual-orders p,
 .range p,
 .about-us p {
   font-size: 20px;
@@ -281,6 +284,14 @@ ul {
 .range {
   min-height: 400px;
   background-image: url(../images/range.png);
+  background-size: 45%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.individual-orders {
+  min-height: 400px;
+  background-image: url(../images/individual.png);
   background-size: 45%;
   background-position: bottom right;
   background-repeat: no-repeat;

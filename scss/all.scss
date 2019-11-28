@@ -261,6 +261,7 @@ ul{
 }
 
 /* about-us */
+.individual-orders,
 .range,
 .about-us {
     max-width: 1205px;
@@ -286,6 +287,14 @@ ul{
 .range{
     min-height: 400px;
     background-image: url(../images/range.png);
+    background-size: 45%;
+    background-position: bottom right;
+    background-repeat: no-repeat; 
+}
+
+.individual-orders{
+    min-height: 400px;
+    background-image: url(../images/individual.png);
     background-size: 45%;
     background-position: bottom right;
     background-repeat: no-repeat; 
