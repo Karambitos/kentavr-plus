@@ -1,5 +1,9 @@
+* {
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
 .modal__background {
-  display: none;
   background: #000;
   height: 100%;
   opacity: 0.4;
@@ -12,7 +16,6 @@
 
 .modal {
   z-index: 200;
-  display: none;
   color: #fff;
   position: fixed;
   top: 0;
@@ -23,7 +26,7 @@
 }
 
 .modal h3 {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -38,26 +41,96 @@
   margin-bottom: 10px;
 }
 
-.modal .form .form__conteiner .form-group {
-  max-width: 180px;
-  width: 100%;
-  border: 1px solid red;
+.modal .form .form__conteiner input {
+  display: block;
+  margin: auto;
+  width: 80%;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #42515b;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
 }
 
-.modal .form .form__conteiner .form-group input {
-  margin: auto;
-  width: 97%;
+.modal .form .form__conteiner input::-webkit-input-placeholder {
+  color: #000;
+  text-indent: 5px;
 }
 
-.modal .form .form-group {
-  margin: auto;
-  width: 100%;
-  border: 1px solid red;
+.modal .form .form__conteiner input:-moz-placeholder {
+  color: #000;
+  text-indent: 5px;
+}
+
+.modal .form .form__conteiner input::-moz-placeholder {
+  color: #000;
+  text-indent: 5px;
+}
+
+.modal .form .form__conteiner input:-ms-input-placeholder {
+  color: #000;
+  text-indent: 5px;
 }
 
 .modal .form .form-group textarea {
+  position: relative;
+  display: block;
   max-width: 360px;
-  width: 97%;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 1px solid #42515b;
+  background-color: #42515b;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+}
+
+.modal .form .form-group textarea::-webkit-input-placeholder {
+  color: #000;
+  text-indent: 5px;
+}
+
+.modal .form .form-group textarea:-moz-placeholder {
+  color: #000;
+  text-indent: 5px;
+}
+
+.modal .form .form-group textarea::-moz-placeholder {
+  color: #000;
+  text-indent: 5px;
+}
+
+.modal .form .form-group textarea:-ms-input-placeholder {
+  color: #000;
+  text-indent: 5px;
+}
+
+.modal .form .btn {
+  display: block;
+  margin: auto;
+  margin-bottom: 30px;
+  border: 1px solid #000;
+  border-radius: 35px;
+  padding: 15px 28px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.modal .form .btn:hover, .modal .form .btn:focus {
+  -webkit-transition: 2s;
+  transition: 2s;
+  background-color: #42515b;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  color: #ffffff;
+  border: 1px solid #ffffff;
 }
 
 .modal .modal-form-close {

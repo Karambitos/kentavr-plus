@@ -5,10 +5,43 @@ $grayLink: rgba(71, 72, 73, 0.3);
 $blue: #0087c8;
 $black: #000;
 
+@mixin placeholder {
+    &::-webkit-input-placeholder { @content; }
+    &:-moz-placeholder           { @content; }
+    &::-moz-placeholder          { @content; }
+    &:-ms-input-placeholder      { @content; }  
+  }
+
+  @mixin button ($color) {
+    border: 1px solid $color;
+    border-radius: 35px;
+    padding: 15px 28px;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center; 
+    background-color: transparent;
+    opacity: 1;
+
+    &:hover,&:focus{
+        transition: 2s;
+        background-color: $gray;
+        box-sizing: border-box;
+        cursor: pointer;
+        color: $white;
+        border: 1px solid $white;
+
+    }
+}
+
+* {
+    transition: 0s;
+}
+
 
 
 .modal__background {
-    display: none;
+    // display: none;
     background: #000;
     height: 100%;
     opacity: 0.4;
@@ -20,7 +53,7 @@ $black: #000;
 }
 .modal {
     z-index: 200;
-    display: none;
+    // display: none;
     color: #fff;
     position: fixed;
     top: 0;
@@ -32,13 +65,11 @@ $black: #000;
 
 
         h3{
-            padding: 20px;
+            padding: 10px;
             text-align: center;
         }
 
         .form{
-            // display: flex;
-            // flex-wrap: wrap;
 
             .form__conteiner{
                 display: flex;
@@ -46,29 +77,55 @@ $black: #000;
                 justify-content: space-around;
                 margin-bottom: 10px;
 
-    
-                .form-group{
-                    max-width: 180px;
-                    width: 100%;
-                    border: 1px solid red;
-                
-                    input {
-                        margin: auto;
-                        width: 97%;
-                        
+                input {
+                    display: block; 
+                    margin: auto;
+                    width: 80%;
+                   
+                    margin-bottom: 10px;
+                    border: none;
+                    // background: transparent;
+                    background-color: $gray;
+
+                    border-bottom: 2px solid $black;
+                    padding-bottom: 5px;
+                    
+                   
+                    @include placeholder {
+                        color: $black;
+                        text-indent: 5px;
                     }
-                } 
+                }
             }
 
             .form-group{
-                margin: auto;
-                width: 100%;
-                border: 1px solid red;
 
                 textarea{
+                    position: relative;
+                    display: block; 
                     max-width: 360px;
-                    width: 97%;
-                    }
+                    width: 80%;
+                    margin: auto;
+                    margin-bottom: 30px;
+
+                    border: 1px solid $gray;
+                    // background: transparent;
+                    background-color: $gray;
+                    border-bottom: 2px solid $black;
+                    padding-bottom: 5px;
+
+                    @include placeholder {
+                        color: $black;
+                        text-indent: 5px;
+                    }                   
+                }
+            }
+
+            .btn{
+                display: block;
+                margin: auto;
+                margin-bottom: 30px;
+                @include button ($black); 
             }
         }
 
