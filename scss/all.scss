@@ -67,12 +67,18 @@ html{
     background: linear-gradient(45deg, #020006, #0f2035, #172e49);
     font-family: 'Roboto', sans-serif;
 
-
     font-size: 20px;
     line-height: 30px;
     font-weight: bold;
     text-transform: uppercase;
+
+    textarea,input  {
+        font-family: 'Roboto', sans-serif;
+        font-size:16px
+    }
 }
+
+
 
 ul{
     padding: 0;

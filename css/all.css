@@ -12,6 +12,11 @@ html {
   text-transform: uppercase;
 }
 
+html textarea, html input {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
 ul {
   padding: 0;
   margin: 0;
