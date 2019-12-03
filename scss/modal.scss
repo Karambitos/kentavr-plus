@@ -36,10 +36,6 @@ $black: #000;
     }
 }
 
-* {
-    transition: 0s;
-}
-
 
 
 .modal__background {
@@ -75,11 +71,14 @@ $black: #000;
         .form{
 
             .form__conteiner{
+                transition: 0s;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
 
                 input {
+
+                    transition: 0s;
                     display: block; 
                     margin: auto;
                     width: 80%;
@@ -92,6 +91,8 @@ $black: #000;
                     @include placeholder {
                         color: #8c8c8b;
                         text-indent: 5px;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 14px;
                     }
                 }
             }
@@ -99,11 +100,11 @@ $black: #000;
             .form-group{
 
                 textarea{
-                    position: relative;
+                    transition: 0s;
                     display: block; 
-                    max-width: 360px;
                     width: 80%;
                     margin: auto;
+                    
                     margin-bottom: 20px;
                     border: none;
                     padding: 5px;
@@ -111,6 +112,8 @@ $black: #000;
                     @include placeholder {
                         color: #8c8c8b;
                         text-indent: 5px;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 14px;
                     }                   
                 }
             }
