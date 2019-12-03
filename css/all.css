@@ -487,15 +487,15 @@ ul {
 }
 
 .range__popUp .range__popUp--item:hover .front-face {
+  -webkit-transition: 2s;
+  transition: 2s;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-.range__popUp .range__popUp--item:hover {
-  background-clip: red;
-}
-
 .range__popUp .range__popUp--item:hover .back-face {
+  -webkit-transition: 2s;
+  transition: 2s;
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg);
 }

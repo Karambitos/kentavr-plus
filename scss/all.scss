@@ -426,11 +426,17 @@ ul{
     }
 
     .range__popUp--item:hover {
-        .front-face {transform: rotateY(180deg)}
+        
+        .front-face {
+            transition: 2s;
+            transform: rotateY(180deg)
+        }
     } 
     .range__popUp--item:hover {
-        .back-face {transform: rotateY(360deg)}
-        background-clip: red;
+        .back-face {
+            transition: 2s;
+            transform: rotateY(360deg)
+        }
     }
 
     .modal-show{
