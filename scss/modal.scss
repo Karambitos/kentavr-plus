@@ -16,7 +16,10 @@ $black: #000;
     border: 1px solid $color;
     border-radius: 35px;
     padding: 15px 28px;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
     text-align: center;
     vertical-align: middle;
     align-items: center; 
@@ -35,12 +38,6 @@ $black: #000;
 
     }
 }
-
-// *{
-//     font-family: 'Roboto', sans-serif;
-//     font-size: 14px;
-// }
-
 
 .modal__background {
     display: none;
@@ -129,6 +126,7 @@ $black: #000;
                     margin: auto;
                     margin-bottom: 20px;
                     @include button (#014591); 
+                    
                 }
             }
     
