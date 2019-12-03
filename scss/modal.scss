@@ -52,6 +52,7 @@ $black: #000;
 .modal {
     z-index: 200;
     display: none;
+    max-width: 420px;
     color: #014591;
     position: fixed;
     top: 0;
@@ -104,7 +105,7 @@ $black: #000;
                     display: block; 
                     width: 80%;
                     margin: auto;
-                    
+
                     margin-bottom: 20px;
                     border: none;
                     padding: 5px;

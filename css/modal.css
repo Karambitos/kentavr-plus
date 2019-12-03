@@ -13,6 +13,7 @@
 .modal {
   z-index: 200;
   display: none;
+  max-width: 420px;
   color: #014591;
   position: fixed;
   top: 0;
