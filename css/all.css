@@ -82,6 +82,7 @@ ul {
   .conteiner .header-conteiner .navigation,
   .conteiner .header-conteiner .contacts {
     display: block;
+    margin-left: auto;
   }
 }
 
@@ -200,7 +201,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
   .conteiner .promoution {
     background-position: right;
   }
@@ -261,6 +262,7 @@ ul {
   .conteiner .promoution p {
     font-size: 20px;
     line-height: 30px;
+    text-transform: uppercase;
   }
 }
 
@@ -285,6 +287,18 @@ ul {
 @media (min-width: 768px) {
   .conteiner .products {
     margin-top: 30px;
+  }
+}
+
+@media (min-width: 414px) {
+  .conteiner .products .owl-stage {
+    margin-left: 41px;
+  }
+}
+
+@media (min-width: 768px) {
+  .conteiner .products .owl-stage {
+    margin-left: 0;
   }
 }
 
@@ -482,6 +496,16 @@ ul {
     font-size: 14px;
     line-height: 16px;
     font-weight: 100;
+  }
+}
+
+@media (min-width: 414px) {
+  .range p,
+  .range__popUp p,
+  .individual-orders p,
+  .about-us p {
+    font-size: 16px;
+    line-height: 18px;
   }
 }
 
@@ -716,7 +740,6 @@ ul {
 }
 
 .about-us {
-  min-height: 350px;
   background-size: 40%;
   background-position: center;
   background-position-x: 10%;
@@ -732,6 +755,7 @@ ul {
 @media (min-width: 768px) {
   .about-us {
     background-image: url(../images/img-1.jpg);
+    min-height: 350px;
   }
 }
 
@@ -774,6 +798,18 @@ ul {
   text-transform: none;
   display: block;
   padding: 30px;
+}
+
+@media (min-width: 736px) {
+  .main-footer .main-conteiner .main-footer-conteiner {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-footer .main-conteiner .main-footer-conteiner {
+    width: 100%;
+  }
 }
 
 .main-footer .main-conteiner .main-footer-conteiner h3 {
@@ -821,6 +857,16 @@ ul {
 @media (min-width: 320px) {
   .main-footer .main-conteiner .map iframe {
     width: 300px;
+  }
+}
+
+@media (min-width: 735px) {
+  .main-footer .main-conteiner .map iframe {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 30px;
+    max-height: 450px;
+    height: 100%;
   }
 }
 
