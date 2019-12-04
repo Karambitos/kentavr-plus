@@ -54,19 +54,47 @@ $black: #000;
 .modal {
         z-index: 200;
         display: none;
-        max-width: 420px;
         color: #014591;
         position: fixed;
         top: 0;
-        left: 40%;
+
         background-color: #87b8e9;
         margin: auto;
-        margin-top: 20%;
+
         border-radius: 30px;
+
+        @media (min-width: 320px) {
+            margin: 10px;
+            margin-top: 30%;
+            min-width: 300px;
+            left: 0;
+        }
+
+        @media (min-width: 720px) {
+            margin-top: 15px;
+            max-height: 390px;
+            margin-left: 103px;
+        }
+
+        @media (min-width: 768px) {
+            margin-top: 20%;
+            left: 40%;
+            max-height: 535px;
+        }
 
         h3{
             padding: 10px;
             text-align: center;
+
+            @media (min-width: 320px) {
+                font-size: 16px;
+                line-height: 18px;
+            }
+    
+            @media (min-width: 720px) {
+                font-size: 23px;
+                line-height: 30px;
+            }
         }
     
         form{
