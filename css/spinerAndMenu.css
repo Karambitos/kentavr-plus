@@ -96,6 +96,7 @@
   font-weight: bold;
   text-transform: uppercase;
   overflow: auto;
+  z-index: 1;
   position: absolute;
   display: none;
   background-color: rgba(71, 72, 73, 0.93);
@@ -107,11 +108,23 @@
 }
 
 .burger__menu .site-navigation {
-  margin-top: 80px;
+  -webkit-transition: 0s;
+  transition: 0s;
+  margin-top: 130px;
+  margin-left: 40px;
 }
 
 .burger__menu .site-navigation a {
   color: #0087c8;
   text-decoration: none;
+}
+
+.burger__menu .site-navigation .burger__buttons {
+  margin-bottom: 20px;
+}
+
+.burger__menu img {
+  max-width: 200px;
+  padding: 30px;
 }
 /*# sourceMappingURL=spinerAndMenu.css.map */

@@ -57,7 +57,7 @@ ul {
 
 @media (min-width: 320px) {
   .conteiner .header-conteiner .main-header-logo img {
-    width: 200px;
+    width: 130px;
   }
 }
 
@@ -187,7 +187,6 @@ ul {
 .conteiner .promoution {
   background-image: url(../images/bg.png);
   background-size: contain;
-  background-position: right;
   background-repeat: no-repeat;
   width: 100%;
   max-height: 660px;
@@ -195,27 +194,78 @@ ul {
   max-width: 1205px;
 }
 
+@media (min-width: 320px) {
+  .conteiner .promoution {
+    background-position: bottom;
+  }
+}
+
+@media (min-width: 768px) {
+  .conteiner .promoution {
+    background-position: right;
+  }
+}
+
 .conteiner .promoution h1 {
-  font-size: 70px;
-  line-height: 100px;
   font-weight: bold;
   color: #0087c8;
   padding-left: 45px;
 }
 
+@media (min-width: 320px) {
+  .conteiner .promoution h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .conteiner .promoution h1 {
+    font-size: 70px;
+    line-height: 100px;
+  }
+}
+
 .conteiner .promoution h3 {
-  padding-left: 45px;
   color: #ffffff;
   padding-left: 20px;
+}
+
+@media (min-width: 320px) {
+  .conteiner .promoution h3 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .conteiner .promoution h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .conteiner .promoution p {
   color: #42515b;
 }
 
+@media (min-width: 320px) {
+  .conteiner .promoution p {
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .conteiner .promoution p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .conteiner .products {
   margin: auto;
-  margin-top: 30px;
   max-width: 1205px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -224,6 +274,18 @@ ul {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media (min-width: 320px) {
+  .conteiner .products {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .conteiner .products {
+    margin-top: 30px;
+  }
 }
 
 .conteiner .products .manufacture,
@@ -240,9 +302,42 @@ ul {
   min-height: 382px;
   width: 100%;
   cursor: pointer;
-  margin-bottom: 10px;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 3px solid #0087c8;
   border-radius: 30px;
+}
+
+@media (min-width: 320px) {
+  .conteiner .products .manufacture,
+  .conteiner .products .agrochemicals,
+  .conteiner .products .food-fluid,
+  .conteiner .products .industrial-fluid,
+  .conteiner .products .household-chemicals,
+  .conteiner .products .building-fluid,
+  .conteiner .products .auto-chemicals,
+  .conteiner .products .caps {
+    max-width: 300px;
+    min-height: 350px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .conteiner .products .manufacture,
+  .conteiner .products .agrochemicals,
+  .conteiner .products .food-fluid,
+  .conteiner .products .industrial-fluid,
+  .conteiner .products .household-chemicals,
+  .conteiner .products .building-fluid,
+  .conteiner .products .auto-chemicals,
+  .conteiner .products .caps {
+    max-width: 320px;
+    min-height: 382px;
+    margin-bottom: 10px;
+  }
 }
 
 .conteiner .products .manufacture h3,
@@ -321,54 +416,144 @@ ul {
 .about-us {
   max-width: 1205px;
   margin: auto;
-  margin-bottom: 60px;
+}
+
+@media (min-width: 320px) {
+  .range,
+  .range__popUp,
+  .individual-orders,
+  .about-us {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .range,
+  .range__popUp,
+  .individual-orders,
+  .about-us {
+    margin-bottom: 60px;
+  }
 }
 
 .range h3,
 .range__popUp h3,
 .individual-orders h3,
 .about-us h3 {
-  font-size: 30px;
-  line-height: 14px;
   font-weight: bold;
   color: #0087c8;
+  margin: 0;
+}
+
+@media (min-width: 320px) {
+  .range h3,
+  .range__popUp h3,
+  .individual-orders h3,
+  .about-us h3 {
+    font-size: 20px;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .range h3,
+  .range__popUp h3,
+  .individual-orders h3,
+  .about-us h3 {
+    font-size: 30px;
+    line-height: 14px;
+  }
 }
 
 .range p,
 .range__popUp p,
 .individual-orders p,
 .about-us p {
-  font-size: 20px;
-  line-height: 28px;
-  font-weight: 200;
   color: #42515b;
   text-transform: none;
+}
+
+@media (min-width: 320px) {
+  .range p,
+  .range__popUp p,
+  .individual-orders p,
+  .about-us p {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 100;
+  }
+}
+
+@media (min-width: 768px) {
+  .range p,
+  .range__popUp p,
+  .individual-orders p,
+  .about-us p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 200;
+  }
 }
 
 .range {
   min-height: 350px;
   background-image: url(../images/range.png);
-  background-size: 45%;
-  background-position: bottom left;
   background-repeat: no-repeat;
 }
 
-.range p {
-  width: 50%;
-  margin-left: auto;
+@media (min-width: 320px) {
+  .range {
+    background-size: 30%;
+    background-position: bottom right;
+  }
+}
+
+@media (min-width: 768px) {
+  .range {
+    background-size: 45%;
+    background-position: bottom left;
+  }
+}
+
+@media (min-width: 320px) {
+  .range p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .range p {
+    width: 50%;
+    margin-left: auto;
+  }
 }
 
 .range__popUp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   position: relative;
-  padding-top: 60px;
+}
+
+@media (min-width: 320px) {
+  .range__popUp {
+    padding-top: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .range__popUp {
+    padding-top: 60px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .range__popUp span {
@@ -518,22 +703,49 @@ ul {
   background-repeat: no-repeat;
 }
 
-.individual-orders p {
-  width: 50%;
+@media (min-width: 320px) {
+  .individual-orders p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .individual-orders p {
+    width: 50%;
+  }
 }
 
 .about-us {
   min-height: 350px;
-  background-image: url(../images/img-1.jpg);
   background-size: 40%;
   background-position: center;
   background-position-x: 10%;
   background-repeat: no-repeat;
 }
 
-.about-us p {
-  width: 50%;
-  margin-left: auto;
+@media (min-width: 320px) {
+  .about-us {
+    background-image: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    background-image: url(../images/img-1.jpg);
+  }
+}
+
+@media (min-width: 320px) {
+  .about-us p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us p {
+    width: 50%;
+    margin-left: auto;
+  }
 }
 
 .main-footer {
@@ -549,7 +761,12 @@ ul {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .main-footer .main-conteiner {
+    margin-bottom: 60px;
+  }
 }
 
 .main-footer .main-conteiner .main-footer-conteiner {
@@ -560,15 +777,39 @@ ul {
 }
 
 .main-footer .main-conteiner .main-footer-conteiner h3 {
-  font-size: 22px;
-  line-height: 24px;
   font-weight: bold;
 }
 
+@media (min-width: 320px) {
+  .main-footer .main-conteiner .main-footer-conteiner h3 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-footer .main-conteiner .main-footer-conteiner h3 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
 .main-footer .main-conteiner .main-footer-conteiner p {
-  font-size: 18px;
-  line-height: 30px;
   font-weight: bold;
+}
+
+@media (min-width: 320px) {
+  .main-footer .main-conteiner .main-footer-conteiner p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-footer .main-conteiner .main-footer-conteiner p {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }
 
 .main-footer .main-conteiner .main-footer-conteiner a {
@@ -577,8 +818,16 @@ ul {
   cursor: pointer;
 }
 
-.main-footer .main-conteiner .map iframe {
-  width: 600px;
-  height: 450px;
+@media (min-width: 320px) {
+  .main-footer .main-conteiner .map iframe {
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-footer .main-conteiner .map iframe {
+    width: 600px;
+    height: 450px;
+  }
 }
 /*# sourceMappingURL=all.css.map */

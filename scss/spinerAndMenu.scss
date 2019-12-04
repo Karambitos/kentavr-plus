@@ -70,6 +70,8 @@ $blue: #0087c8;
   font-weight: bold;
   text-transform: uppercase;
   overflow: auto;
+
+  z-index: 1;
       
   position: absolute;
   display: none;
@@ -81,13 +83,23 @@ $blue: #0087c8;
   margin: auto;
   
   .site-navigation{
-    margin-top: 80px;
+    transition: 0s;
+    margin-top: 130px;
+    margin-left: 40px;
     
       a{
         color: $blue;
         text-decoration: none;
       }
+
+      .burger__buttons{
+        margin-bottom: 20px;
+      }
   }
 
+  img{
+    max-width: 200px;
+    padding: 30px;
+  }
 }
 
