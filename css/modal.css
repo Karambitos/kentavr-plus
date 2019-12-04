@@ -29,7 +29,7 @@
   text-align: center;
 }
 
-.modal .form .form__conteiner {
+.modal form .form__conteiner {
   -webkit-transition: 0s;
   transition: 0s;
   display: -webkit-box;
@@ -41,77 +41,79 @@
       justify-content: space-around;
 }
 
-.modal .form .form__conteiner input {
+.modal form .form__conteiner input {
   -webkit-transition: 0s;
   transition: 0s;
   display: block;
-  margin: auto;
-  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 10px;
+  width: 80%;
   border: none;
   padding: 5px;
 }
 
-.modal .form .form__conteiner input::-webkit-input-placeholder {
+.modal form .form__conteiner input::-webkit-input-placeholder {
   color: #8c8c8b;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-.modal .form .form__conteiner input:-moz-placeholder {
+.modal form .form__conteiner input:-moz-placeholder {
   color: #8c8c8b;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-.modal .form .form__conteiner input::-moz-placeholder {
+.modal form .form__conteiner input::-moz-placeholder {
   color: #8c8c8b;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-.modal .form .form__conteiner input:-ms-input-placeholder {
+.modal form .form__conteiner input:-ms-input-placeholder {
   color: #8c8c8b;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-.modal .form .form-group textarea {
+.modal form .form-group textarea {
   -webkit-transition: 0s;
   transition: 0s;
   display: block;
-  width: 80%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
+  width: 80%;
   border: none;
   padding: 5px;
 }
 
-.modal .form .form-group textarea::-webkit-input-placeholder {
+.modal form .form-group textarea::-webkit-input-placeholder {
   color: #8c8c8b;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-.modal .form .form-group textarea:-moz-placeholder {
+.modal form .form-group textarea:-moz-placeholder {
   color: #8c8c8b;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-.modal .form .form-group textarea::-moz-placeholder {
+.modal form .form-group textarea::-moz-placeholder {
   color: #8c8c8b;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-.modal .form .form-group textarea:-ms-input-placeholder {
+.modal form .form-group textarea:-ms-input-placeholder {
   color: #8c8c8b;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-.modal .form .btn {
+.modal form .btn {
   display: block;
   margin: auto;
   margin-bottom: 20px;
@@ -132,7 +134,7 @@
   color: #014591;
 }
 
-.modal .form .btn:hover, .modal .form .btn:focus {
+.modal form .btn:hover, .modal form .btn:focus {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: 2s;

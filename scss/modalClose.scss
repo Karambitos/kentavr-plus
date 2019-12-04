@@ -1,0 +1,90 @@
+
+.modal__close{
+        .overlay {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .5);
+        display: none;
+        z-index: 1;
+        
+        .popup {
+            position: absolute;
+            width: 300px;
+            height: 100px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: 40px;
+            background-color: #87b8e9;
+            color: #014591;
+            border-radius: 30px;
+
+            h2{
+                text-align: center;
+            
+            }
+
+            .close-popup {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                width: 23px;
+                height: 23px;
+                cursor: pointer;
+
+                &:before {
+                    content: '';
+                    background-color: #000;
+                    position: absolute;
+                    height: 2px;
+                    width: 31px;
+                    top: 11px;
+                    left: -4px;
+                    transform: rotate(-45deg);
+                }
+
+                &:after {
+                    content: '';
+                    background-color: #000;
+                    position: absolute;
+                    height: 2px;
+                    width: 31px;
+                    top: 11px;
+                    transform: rotate(45deg);
+                    left: -4px;
+                }
+                
+            }
+        }
+        
+    }
+    .scroll-up {
+        width: 130px;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background-color: #fcfcfc;
+        color: #aaa;
+        font-size: 13px;
+        text-align: center;
+        padding: 15px;
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: background .2s ease;
+        display: none;
+
+        &:hover {
+        background-color: #eeeeee;
+        color: #777777;
+        }
+    }
+
+    
+}
+
+
+
