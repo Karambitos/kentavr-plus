@@ -78,7 +78,7 @@ ul {
   }
 }
 
-@media (min-width: 720px) {
+@media (min-width: 768px) {
   .conteiner .header-conteiner .navigation,
   .conteiner .header-conteiner .contacts {
     display: block;
