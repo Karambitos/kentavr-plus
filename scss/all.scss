@@ -520,7 +520,7 @@ ul{
 
     @media (min-width: 813px) {
         padding-top: 60px;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
 
     span{
@@ -552,12 +552,12 @@ ul{
     .range__popUp--item{
         display: none;
         box-sizing: border-box;
-        max-width: 290px;
-        min-height: 382px;
+        max-width: 285px;
+        min-height: 425px;
         width: 100%;
 
         position: relative;
-        margin-bottom: 10px;
+        margin: 0 5px 10px 5px;
 
         transform: scale(1);
         transition: transform 0.5s;
@@ -587,8 +587,6 @@ ul{
             background-color: $gray;
         }    
         .back-face{
-            // transform: rotateY(180deg);
-
             p{
                 text-align: center;
                 margin: 10px 0 5px 0;
@@ -596,11 +594,11 @@ ul{
                 color: $blue;
             }
             table {
-
+                width: 100%;
 
                 th {
                     text-align: left;
-                    font-size: 16px;
+                    font-size: 15px;
                     color: $blue;
                     padding-top: 10px;
                     padding-left: 10px;
@@ -608,12 +606,13 @@ ul{
                     td {
                     color: $black;
                     font-size: 14px;
+                    text-transform: none;
                     text-align: left;
                     padding-left: 10px;
                     }
                     td:nth-child(2n){
-                    text-align: center;
-                    padding-left: 0px;
+                    text-align: right;
+                    padding-right: 15px;
                     }
                 }
                 

@@ -690,9 +690,9 @@ ul {
 @media (min-width: 813px) {
   .range__popUp {
     padding-top: 60px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -752,11 +752,11 @@ ul {
   display: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 290px;
-  min-height: 382px;
+  max-width: 285px;
+  min-height: 425px;
   width: 100%;
   position: relative;
-  margin-bottom: 10px;
+  margin: 0 5px 10px 5px;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: -webkit-transform 0.5s;
@@ -803,9 +803,13 @@ ul {
   color: #0087c8;
 }
 
+.range__popUp .range__popUp--item .back-face table {
+  width: 100%;
+}
+
 .range__popUp .range__popUp--item .back-face table th {
   text-align: left;
-  font-size: 16px;
+  font-size: 15px;
   color: #0087c8;
   padding-top: 10px;
   padding-left: 10px;
@@ -814,13 +818,14 @@ ul {
 .range__popUp .range__popUp--item .back-face table td {
   color: #000;
   font-size: 14px;
+  text-transform: none;
   text-align: left;
   padding-left: 10px;
 }
 
 .range__popUp .range__popUp--item .back-face table td:nth-child(2n) {
-  text-align: center;
-  padding-left: 0px;
+  text-align: right;
+  padding-right: 15px;
 }
 
 .range__popUp .range__popUp--item .front-face {
