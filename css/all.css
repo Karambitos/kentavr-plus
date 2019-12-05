@@ -639,6 +639,7 @@ ul {
   .range {
     background-position: bottom;
     background-position-x: 400px;
+    min-height: 450px;
   }
 }
 
