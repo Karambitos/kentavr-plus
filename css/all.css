@@ -905,6 +905,8 @@ ul {
 }
 
 .about-us p {
+  color: #42515b;
+  text-transform: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -912,15 +914,28 @@ ul {
 @media (min-width: 320px) {
   .about-us p {
     width: 100%;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 100;
     padding: 0 15px;
+  }
+}
+
+@media (min-width: 414px) {
+  .about-us p {
+    font-size: 16px;
+    line-height: 18px;
   }
 }
 
 @media (min-width: 813px) {
   .about-us p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 200;
+    padding: 0;
     width: 50%;
     margin-left: auto;
-    padding: 0;
   }
 }
 
