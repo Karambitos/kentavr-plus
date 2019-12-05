@@ -624,7 +624,7 @@ ul {
 }
 
 .range {
-  min-height: 350px;
+  height: 350px;
   background-image: url(../images/range.png);
   background-repeat: no-repeat;
 }
@@ -864,7 +864,7 @@ ul {
 }
 
 .individual-orders {
-  min-height: 350px;
+  height: 350px;
   background-image: url(../images/individual.png);
   background-size: 30%;
   background-position: bottom;
