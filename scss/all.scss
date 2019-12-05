@@ -765,7 +765,10 @@ ul{
         }   
 
         .map{
-            width: 40%;
+            @media (min-width: 568px) {
+                width: 40%;
+            }
+
             iframe {
                 @media (min-width: 320px) {
                     max-width: 300px;

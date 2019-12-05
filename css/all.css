@@ -997,8 +997,10 @@ ul {
   cursor: pointer;
 }
 
-.main-footer .main-conteiner .map {
-  width: 40%;
+@media (min-width: 568px) {
+  .main-footer .main-conteiner .map {
+    width: 40%;
+  }
 }
 
 @media (min-width: 320px) {
