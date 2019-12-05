@@ -676,32 +676,19 @@ ul{
         }
 
     p{
-        color: $gray;
-        text-transform: none;
         box-sizing: border-box;
-    
+
         @media (min-width: 320px) {
             width: 100%;
-            font-size: 14px;
-            line-height: 16px;
-            font-weight: 100;
             padding: 0 15px;
         }
 
-
-        @media (min-width: 414px) {
-            font-size: 16px;
-            line-height: 18px;
-        }
-
         @media (min-width: 813px) {
-            font-size: 20px;
-            line-height: 28px;
-            font-weight: 200;
-            padding: 0;
             width: 50%;
             margin-left: auto;
+            padding: 0;
         }
+        
     }
 }
 // FOOTER
