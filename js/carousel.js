@@ -11,7 +11,7 @@ $(document).ready(function() {
         0: {
           items: 1
         },
-        700: {
+        550: {
           items: 2
         },
         900: {

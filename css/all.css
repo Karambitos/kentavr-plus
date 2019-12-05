@@ -71,6 +71,18 @@ ul {
   margin-left: auto;
 }
 
+@media (min-width: 1024px) {
+  .conteiner .header-conteiner .contacts {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1035px) {
+  .conteiner .header-conteiner .contacts {
+    margin-left: 0;
+  }
+}
+
 @media (min-width: 320px) {
   .conteiner .header-conteiner .navigation,
   .conteiner .header-conteiner .contacts {
@@ -78,11 +90,10 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .conteiner .header-conteiner .navigation,
   .conteiner .header-conteiner .contacts {
     display: block;
-    margin-left: auto;
   }
 }
 
@@ -220,7 +231,7 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .conteiner .promoution h1 {
     font-size: 70px;
     line-height: 100px;
@@ -239,7 +250,7 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .conteiner .promoution h3 {
     font-size: 20px;
     line-height: 30px;
@@ -261,7 +272,7 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .conteiner .promoution p {
     font-size: 20px;
     line-height: 30px;
@@ -288,19 +299,31 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .conteiner .products {
     margin-top: 30px;
   }
 }
 
-@media (min-width: 414px) {
+@media (min-width: 375px) {
   .conteiner .products .owl-stage {
-    margin-left: 41px;
+    margin-left: 33px;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 736px) {
+  .conteiner .products .owl-stage {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 800px) {
+  .conteiner .products .owl-stage {
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 813px) {
   .conteiner .products .owl-stage {
     margin-left: 0;
   }
@@ -316,8 +339,6 @@ ul {
 .conteiner .products .caps {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 320px;
-  min-height: 382px;
   width: 100%;
   cursor: pointer;
   display: block;
@@ -343,7 +364,22 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 550px) {
+  .conteiner .products .manufacture,
+  .conteiner .products .agrochemicals,
+  .conteiner .products .food-fluid,
+  .conteiner .products .industrial-fluid,
+  .conteiner .products .household-chemicals,
+  .conteiner .products .building-fluid,
+  .conteiner .products .auto-chemicals,
+  .conteiner .products .caps {
+    max-width: 230px;
+    min-height: 300px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 736px) {
   .conteiner .products .manufacture,
   .conteiner .products .agrochemicals,
   .conteiner .products .food-fluid,
@@ -387,7 +423,7 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .conteiner .products .manufacture h3,
   .conteiner .products .agrochemicals h3,
   .conteiner .products .food-fluid h3,
@@ -432,7 +468,7 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .conteiner .products .manufacture p,
   .conteiner .products .agrochemicals p,
   .conteiner .products .food-fluid p,
@@ -503,7 +539,7 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .range,
   .range__popUp,
   .individual-orders,
@@ -532,7 +568,7 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .range h3,
   .range__popUp h3,
   .individual-orders h3,
@@ -574,7 +610,7 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .range p,
   .range__popUp p,
   .individual-orders p,
@@ -599,7 +635,14 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 736px) {
+  .range {
+    background-position: bottom;
+    background-position-x: 400px;
+  }
+}
+
+@media (min-width: 813px) {
   .range {
     background-size: 45%;
     background-position: bottom left;
@@ -618,7 +661,7 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .range p {
     width: 50%;
     margin-left: auto;
@@ -644,7 +687,7 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .range__popUp {
     padding-top: 60px;
     -webkit-box-pack: justify;
@@ -655,8 +698,27 @@ ul {
 
 .range__popUp span {
   position: absolute;
-  top: -20px;
-  left: 15px;
+}
+
+@media (min-width: 320px) {
+  .range__popUp span {
+    top: -20px;
+    left: 15px;
+  }
+}
+
+@media (min-width: 667px) {
+  .range__popUp span {
+    top: -100px;
+    left: 60px;
+  }
+}
+
+@media (min-width: 813px) {
+  .range__popUp span {
+    top: -20px;
+    left: 15px;
+  }
 }
 
 .range__popUp span a {
@@ -807,7 +869,7 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .individual-orders p {
     width: 50%;
   }
@@ -826,7 +888,7 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .about-us {
     background-image: url(../images/img-1.jpg);
     min-height: 350px;
@@ -845,7 +907,7 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .about-us p {
     width: 50%;
     margin-left: auto;
@@ -868,7 +930,7 @@ ul {
       justify-content: space-around;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .main-footer .main-conteiner {
     margin-bottom: 60px;
   }
@@ -883,13 +945,13 @@ ul {
 
 @media (min-width: 736px) {
   .main-footer .main-conteiner .main-footer-conteiner {
-    width: 50%;
+    width: 40%;
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 568px) {
   .main-footer .main-conteiner .main-footer-conteiner {
-    width: 100%;
+    padding: 0;
   }
 }
 
@@ -904,7 +966,7 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .main-footer .main-conteiner .main-footer-conteiner h3 {
     font-size: 22px;
     line-height: 24px;
@@ -922,7 +984,7 @@ ul {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 813px) {
   .main-footer .main-conteiner .main-footer-conteiner p {
     font-size: 18px;
     line-height: 30px;
@@ -935,26 +997,21 @@ ul {
   cursor: pointer;
 }
 
+.main-footer .main-conteiner .map {
+  width: 40%;
+}
+
 @media (min-width: 320px) {
   .main-footer .main-conteiner .map iframe {
     max-width: 300px;
   }
 }
 
-@media (min-width: 735px) {
+@media (min-width: 568px) {
   .main-footer .main-conteiner .map iframe {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 30px;
-    max-height: 450px;
     height: 100%;
-  }
-}
-
-@media (min-width: 769px) {
-  .main-footer .main-conteiner .map iframe {
-    width: 600px;
-    height: 450px;
+    width: 100%;
+    max-width: 500px;
   }
 }
 /*# sourceMappingURL=all.css.map */
