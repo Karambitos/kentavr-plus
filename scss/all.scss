@@ -2,7 +2,7 @@
     transition: 2s;
 }
 
-$bg: rgb(39, 39, 38);
+$bg: linear-gradient(45deg, #020006, #0f2035, #172e49);
 $white: #ffffff;
 $gray: #42515b;
 $grayLink: rgba(71, 72, 73, 0.3);
@@ -64,7 +64,7 @@ $black: #000;
 }
 
 html{
-    background: linear-gradient(45deg, #020006, #0f2035, #172e49);
+    background: $bg;
     font-family: 'Roboto', sans-serif;
 
     font-size: 20px;
@@ -303,7 +303,7 @@ ul{
             cursor: pointer;
             display: block;
             justify-content: center;
-            background: linear-gradient(45deg, #020006, #0f2035, #172e49);
+            background-color: #0f2035;
 
             border: 3px solid $blue;
             border-radius: 30px;
@@ -534,6 +534,7 @@ ul{
         }
 
         a{
+        display: block;
         color: $white;
         text-decoration: none;
         @include button ($blue); 
@@ -613,7 +614,7 @@ ul{
         .front-face{
             padding-left: 45px;
             box-sizing: border-box;
-            background: linear-gradient(45deg, #020006, #0f2035, #172e49);
+            background: $bg;
         
             h4{
                 margin: 30px 0 0 0;
