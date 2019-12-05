@@ -303,6 +303,7 @@ ul{
             cursor: pointer;
             display: block;
             justify-content: center;
+            background: linear-gradient(45deg, #020006, #0f2035, #172e49);
 
             border: 3px solid $blue;
             border-radius: 30px;
@@ -323,18 +324,9 @@ ul{
                 min-height: 382px;
                 margin-bottom: 10px;
             }
-            
-            // @media (min-width: 813px) {
-            //     max-width: 320px;
-            //     min-height: 382px;
-            //     margin-bottom: 10px;
-            // }
 
             h3{
-                
                 height: 66px;
-                // font-size: 24px;
-                // line-height: 26px;
                 font-weight: bold;
                 color: $blue;
                 text-align: center;

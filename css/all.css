@@ -345,6 +345,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: linear-gradient(45deg, #020006, #0f2035, #172e49);
   border: 3px solid #0087c8;
   border-radius: 30px;
 }
