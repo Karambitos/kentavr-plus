@@ -78,7 +78,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .conteiner .header-conteiner .navigation,
   .conteiner .header-conteiner .contacts {
     display: block;
@@ -220,7 +220,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .conteiner .promoution h1 {
     font-size: 70px;
     line-height: 100px;
@@ -239,7 +239,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .conteiner .promoution h3 {
     font-size: 20px;
     line-height: 30px;
@@ -248,6 +248,8 @@ ul {
 
 .conteiner .promoution p {
   color: #42515b;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (min-width: 320px) {
@@ -255,14 +257,16 @@ ul {
     font-size: 14px;
     line-height: 16px;
     text-transform: none;
+    padding: 0 15px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .conteiner .promoution p {
     font-size: 20px;
     line-height: 30px;
     text-transform: uppercase;
+    padding: 0;
   }
 }
 
@@ -284,7 +288,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .conteiner .products {
     margin-top: 30px;
   }
@@ -296,7 +300,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .conteiner .products .owl-stage {
     margin-left: 0;
   }
@@ -339,7 +343,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .conteiner .products .manufacture,
   .conteiner .products .agrochemicals,
   .conteiner .products .food-fluid,
@@ -363,11 +367,39 @@ ul {
 .conteiner .products .auto-chemicals h3,
 .conteiner .products .caps h3 {
   height: 66px;
-  font-size: 24px;
-  line-height: 26px;
   font-weight: bold;
   color: #0087c8;
   text-align: center;
+}
+
+@media (min-width: 320px) {
+  .conteiner .products .manufacture h3,
+  .conteiner .products .agrochemicals h3,
+  .conteiner .products .food-fluid h3,
+  .conteiner .products .industrial-fluid h3,
+  .conteiner .products .household-chemicals h3,
+  .conteiner .products .building-fluid h3,
+  .conteiner .products .auto-chemicals h3,
+  .conteiner .products .caps h3 {
+    font-size: 20px;
+    line-height: 18px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  .conteiner .products .manufacture h3,
+  .conteiner .products .agrochemicals h3,
+  .conteiner .products .food-fluid h3,
+  .conteiner .products .industrial-fluid h3,
+  .conteiner .products .household-chemicals h3,
+  .conteiner .products .building-fluid h3,
+  .conteiner .products .auto-chemicals h3,
+  .conteiner .products .caps h3 {
+    font-size: 24px;
+    line-height: 26px;
+    padding-top: 0px;
+  }
 }
 
 .conteiner .products .manufacture p,
@@ -378,12 +410,42 @@ ul {
 .conteiner .products .building-fluid p,
 .conteiner .products .auto-chemicals p,
 .conteiner .products .caps p {
-  font-size: 20px;
-  line-height: 22px;
   font-weight: 200;
   color: #42515b;
   padding: 0 15px;
   text-transform: none;
+}
+
+@media (min-width: 320px) {
+  .conteiner .products .manufacture p,
+  .conteiner .products .agrochemicals p,
+  .conteiner .products .food-fluid p,
+  .conteiner .products .industrial-fluid p,
+  .conteiner .products .household-chemicals p,
+  .conteiner .products .building-fluid p,
+  .conteiner .products .auto-chemicals p,
+  .conteiner .products .caps p {
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: none;
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 769px) {
+  .conteiner .products .manufacture p,
+  .conteiner .products .agrochemicals p,
+  .conteiner .products .food-fluid p,
+  .conteiner .products .industrial-fluid p,
+  .conteiner .products .household-chemicals p,
+  .conteiner .products .building-fluid p,
+  .conteiner .products .auto-chemicals p,
+  .conteiner .products .caps p {
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: uppercase;
+    padding: 0;
+  }
 }
 
 .conteiner .products .manufacture {
@@ -437,11 +499,11 @@ ul {
   .range__popUp,
   .individual-orders,
   .about-us {
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .range,
   .range__popUp,
   .individual-orders,
@@ -470,7 +532,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .range h3,
   .range__popUp h3,
   .individual-orders h3,
@@ -486,6 +548,8 @@ ul {
 .about-us p {
   color: #42515b;
   text-transform: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 @media (min-width: 320px) {
@@ -496,6 +560,7 @@ ul {
     font-size: 14px;
     line-height: 16px;
     font-weight: 100;
+    padding: 0 15px;
   }
 }
 
@@ -509,7 +574,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .range p,
   .range__popUp p,
   .individual-orders p,
@@ -517,6 +582,7 @@ ul {
     font-size: 20px;
     line-height: 28px;
     font-weight: 200;
+    padding: 0;
   }
 }
 
@@ -533,23 +599,30 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .range {
     background-size: 45%;
     background-position: bottom left;
   }
 }
 
+.range p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 @media (min-width: 320px) {
   .range p {
     width: 100%;
+    padding: 0 15px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .range p {
     width: 50%;
     margin-left: auto;
+    padding: 0;
   }
 }
 
@@ -571,7 +644,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .range__popUp {
     padding-top: 60px;
     -webkit-box-pack: justify;
@@ -583,6 +656,7 @@ ul {
 .range__popUp span {
   position: absolute;
   top: -20px;
+  left: 15px;
 }
 
 .range__popUp span a {
@@ -733,7 +807,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .individual-orders p {
     width: 50%;
   }
@@ -752,23 +826,30 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .about-us {
     background-image: url(../images/img-1.jpg);
     min-height: 350px;
   }
 }
 
+.about-us p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 @media (min-width: 320px) {
   .about-us p {
     width: 100%;
+    padding: 0 15px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .about-us p {
     width: 50%;
     margin-left: auto;
+    padding: 0;
   }
 }
 
@@ -787,7 +868,7 @@ ul {
       justify-content: space-around;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .main-footer .main-conteiner {
     margin-bottom: 60px;
   }
@@ -806,7 +887,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .main-footer .main-conteiner .main-footer-conteiner {
     width: 100%;
   }
@@ -823,7 +904,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .main-footer .main-conteiner .main-footer-conteiner h3 {
     font-size: 22px;
     line-height: 24px;
@@ -841,7 +922,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .main-footer .main-conteiner .main-footer-conteiner p {
     font-size: 18px;
     line-height: 30px;
@@ -856,7 +937,7 @@ ul {
 
 @media (min-width: 320px) {
   .main-footer .main-conteiner .map iframe {
-    width: 300px;
+    max-width: 300px;
   }
 }
 
@@ -870,7 +951,7 @@ ul {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .main-footer .main-conteiner .map iframe {
     width: 600px;
     height: 450px;
