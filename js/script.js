@@ -12,17 +12,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const body = document.querySelector('body');
         const burgerReCall = document.querySelector('.burger_reCall');
 
+
+        const overflowHidden = () => {
+            if (body.style.overflow === '') {
+                body.style.overflow = 'hidden';
+            } else {
+                body.style.overflow = '';
+            } 
+        };
+
         spinner.addEventListener('click', (event) => {
             event.preventDefault();
             spinerMenu.classList.toggle("modal-show");
             spinnerButton.forEach(elem => {
                 elem.classList.toggle("active")  
                 });    
-            if (body.style.overflow === '') {
-                body.style.overflow = 'hidden';
-            } else {
-                body.style.overflow = '';
-            }
+                overflowHidden ();
          });
 
         spinerLinks.forEach(elem => {
@@ -31,11 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 spinnerButton.forEach(elem => {
                     elem.classList.toggle("active")  
                     });    
-                if (body.style.overflow === '') {
-                    body.style.overflow = 'hidden';
-                }else {
-                    body.style.overflow = '';
-                }
+                    overflowHidden ();
              });
         });
 
@@ -43,11 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             event.preventDefault();
                 popUpBg.classList.toggle("modal-show");
                 popUp.classList.toggle("modal-show");
-            if (body.style.overflow === '') {
-                body.style.overflow = 'hidden';
-            } else {
-                body.style.overflow = '';
-            }
+                overflowHidden ();
          });
 
         //  Модальное окно обратной связи
@@ -70,12 +67,14 @@ document.addEventListener('DOMContentLoaded', () => {
             event.preventDefault();
             popUpBg.classList.toggle("modal-show");
             popUp.classList.toggle("modal-show");
+            overflowHidden ();
         });
 
          JSclose.addEventListener('click', (event) => {
             event.preventDefault();
             popUpBg.classList.toggle("modal-show");
             popUp.classList.toggle("modal-show");
+            overflowHidden ();
         });
     }
 });
