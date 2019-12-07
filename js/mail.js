@@ -33,7 +33,6 @@ $(document).ready(function() {
                 th.trigger("reset");
                 $('.js-overlay-thank-you').fadeOut();
                 location.reload();
-
 			}, 3000);
 		});
 		return false;

@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         spinerLinks.forEach(elem => {
             elem.addEventListener('click', (event) => {
-                spinerMenu.classList.toggle("modal-show");
+                spinerMenu.classList.toggle("modal-show");                
                 spinnerButton.forEach(elem => {
                     elem.classList.toggle("active")  
                     });    
