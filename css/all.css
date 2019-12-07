@@ -572,40 +572,6 @@ button {
           box-sizing: border-box;
 }
 
-@media (min-width: 320px) {
-  .range p,
-  .range__popUp p,
-  .individual-orders p,
-  .about-us p {
-    font-size: 14px;
-    line-height: 16px;
-    font-weight: 100;
-    padding: 0 15px;
-  }
-}
-
-@media (min-width: 414px) {
-  .range p,
-  .range__popUp p,
-  .individual-orders p,
-  .about-us p {
-    font-size: 16px;
-    line-height: 18px;
-  }
-}
-
-@media (min-width: 813px) {
-  .range p,
-  .range__popUp p,
-  .individual-orders p,
-  .about-us p {
-    font-size: 20px;
-    line-height: 28px;
-    font-weight: 200;
-    padding: 0;
-  }
-}
-
 .range .flex__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,6 +592,9 @@ button {
 
 @media (min-width: 320px) {
   .range .flex__conteiner p {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 100;
     width: 100%;
     padding: 0 15px;
   }
@@ -634,6 +603,15 @@ button {
 @media (min-width: 736px) {
   .range .flex__conteiner p {
     width: 50%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 813px) {
+  .range .flex__conteiner p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 200;
     padding: 0;
   }
 }
@@ -917,6 +895,9 @@ button {
 
 @media (min-width: 320px) {
   .individual-orders .flex__conteiner p {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 100;
     width: 100%;
     padding: 0 15px;
   }
@@ -925,6 +906,15 @@ button {
 @media (min-width: 736px) {
   .individual-orders .flex__conteiner p {
     width: 50%;
+    padding: 0;
+  }
+}
+
+@media (min-width: 813px) {
+  .individual-orders .flex__conteiner p {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 200;
     padding: 0;
   }
 }

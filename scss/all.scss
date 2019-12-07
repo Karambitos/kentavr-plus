@@ -456,25 +456,25 @@ button{
         text-transform: none;
         box-sizing: border-box;
 
-        @media (min-width: 320px) {
-            font-size: 14px;
-            line-height: 16px;
-            font-weight: 100;
-            padding: 0 15px;
-        }
+        // @media (min-width: 320px) {
+        //     font-size: 14px;
+        //     line-height: 16px;
+        //     font-weight: 100;
+        //     padding: 0 15px;
+        // }
 
 
-        @media (min-width: 414px) {
-            font-size: 16px;
-            line-height: 18px;
-        }
+        // @media (min-width: 414px) {
+        //     font-size: 16px;
+        //     line-height: 18px;
+        // }
 
-        @media (min-width: 813px) {
-            font-size: 20px;
-            line-height: 28px;
-            font-weight: 200;
-            padding: 0;
-        }
+        // @media (min-width: 813px) {
+        //     font-size: 20px;
+        //     line-height: 28px;
+        //     font-weight: 200;
+        //     padding: 0;
+        // }
     }
 }
 .range{
@@ -489,12 +489,23 @@ button{
             padding-left: 15px;
 
             @media (min-width: 320px) {
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 100;
+
                 width: 100%;
                 padding: 0 15px;
             }
 
             @media (min-width: 736px) {
                 width: 50%;
+                padding: 0;
+            }
+    
+            @media (min-width: 813px) {
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 200;
                 padding: 0;
             }
         } 
@@ -702,12 +713,23 @@ button{
             margin: 30px 0;
 
             @media (min-width: 320px) {
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 100;
+
                 width: 100%;
                 padding: 0 15px;
             }
 
             @media (min-width: 736px) {
                 width: 50%;
+                padding: 0;
+            }
+    
+            @media (min-width: 813px) {
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 200;
                 padding: 0;
             }
         } 
