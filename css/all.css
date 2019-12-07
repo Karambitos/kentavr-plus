@@ -639,6 +639,12 @@ button {
   }
 }
 
+@media (min-width: 813px) {
+  .range .flex__conteiner .range__picture {
+    width: 50%;
+  }
+}
+
 .range .flex__conteiner .range__picture img {
   max-width: 80%;
   margin: auto;
@@ -919,6 +925,7 @@ button {
 
 @media (min-width: 813px) {
   .individual-orders .flex__conteiner p {
+    width: 50%;
     font-size: 20px;
     line-height: 28px;
     font-weight: 200;
@@ -935,6 +942,15 @@ button {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+}
+
+@media (min-width: 813px) {
+  .individual-orders .flex__conteiner .individual-orders__picture {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 50%;
   }
 }
 
