@@ -730,7 +730,6 @@ button{
                 font-size: 20px;
                 line-height: 28px;
                 font-weight: 200;
-                padding: 0;
             }
         } 
 
@@ -769,10 +768,18 @@ button{
             margin-bottom: 10px;
 
             @media (min-width: 320px) {
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 100;
+
                 padding: 0 15px;
             }
 
             @media (min-width: 813px) {
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 200;
+
                 padding: 0;
                 margin-top: 30px;
             }
@@ -783,6 +790,10 @@ button{
             margin: 0;
 
             @media (min-width: 320px) {
+                font-size: 14px;
+                line-height: 16px;
+                font-weight: 100;
+
                 width: 100%;
                 padding: 0 15px;
             }
@@ -792,6 +803,10 @@ button{
             }
 
             @media (min-width: 813px) {
+                font-size: 20px;
+                line-height: 28px;
+                font-weight: 200;
+
                 width: 45%;
                 padding: 0;
             }

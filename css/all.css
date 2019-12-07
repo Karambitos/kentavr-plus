@@ -915,7 +915,6 @@ button {
     font-size: 20px;
     line-height: 28px;
     font-weight: 200;
-    padding: 0;
   }
 }
 
@@ -967,12 +966,18 @@ button {
 
 @media (min-width: 320px) {
   .about-us .flex__conteiner .about-us--text {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 100;
     padding: 0 15px;
   }
 }
 
 @media (min-width: 813px) {
   .about-us .flex__conteiner .about-us--text {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 200;
     padding: 0;
     margin-top: 30px;
   }
@@ -986,6 +991,9 @@ button {
 
 @media (min-width: 320px) {
   .about-us .flex__conteiner .about-us--reasons {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 100;
     width: 100%;
     padding: 0 15px;
   }
@@ -999,6 +1007,9 @@ button {
 
 @media (min-width: 813px) {
   .about-us .flex__conteiner .about-us--reasons {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 200;
     width: 45%;
     padding: 0;
   }
