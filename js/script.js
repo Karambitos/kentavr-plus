@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
      const scroll = () => {
            // собираем все якоря; устанавливаем время анимации и количество кадров
         const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
-        animationTime = 1000,
-        framesCount = 500;
+        animationTime = 500,
+        framesCount = 700;
 
         anchors.forEach(function(item) {
         // каждому якорю присваиваем обработчик события
