@@ -11,8 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const spinerLinks = document.querySelectorAll('.burger__buttons');
         const body = document.querySelector('body');
         const burgerReCall = document.querySelector('.burger_reCall');
+        const btn = document.querySelector(".btn")
 
-
+    // ФУНКЦИЯ закрывает доступ к боди
         const overflowHidden = () => {
             if (body.style.overflow === '') {
                 body.style.overflow = 'hidden';
@@ -20,7 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 body.style.overflow = '';
             } 
         };
-
+     // ============================================
+     
         spinner.addEventListener('click', (event) => {
             event.preventDefault();
             spinerMenu.classList.toggle("modal-show");
@@ -55,10 +57,11 @@ document.addEventListener('DOMContentLoaded', () => {
          const JSclose = document.querySelector('.JSclose');
         
         
-         const openModal = reCall.addEventListener('click', (event) => {
+        reCall.addEventListener('click', (event) => {
                 event.preventDefault();
                 popUpBg.classList.toggle("modal-show");
                 popUp.classList.toggle("modal-show");
+                overflowHidden ();
         });
 
         //  ЗАКРЫТИЕ Модального окна обратной связи
@@ -75,6 +78,10 @@ document.addEventListener('DOMContentLoaded', () => {
             popUpBg.classList.toggle("modal-show");
             popUp.classList.toggle("modal-show");
             overflowHidden ();
+        });
+
+        btn.addEventListener('click', (event) => {
+             overflowHidden ();
         });
     }
 });

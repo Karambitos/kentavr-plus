@@ -10,6 +10,7 @@ html {
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
+  scroll-behavior: smooth;
 }
 
 html textarea, html input {
@@ -23,6 +24,14 @@ ul {
   list-style: none;
 }
 
+button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .site-contacts__item {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
@@ -31,13 +40,20 @@ ul {
 .conteiner {
   max-width: 1305px;
   margin: auto;
+  padding: 0 10px;
   /* header */
   /* 1st block */
   /* products */
 }
 
+@media (min-width: 1025px) {
+  .conteiner {
+    padding: 0;
+  }
+}
+
 .conteiner .header-conteiner {
-  max-width: 1305px;
+  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: auto;
@@ -90,7 +106,7 @@ ul {
   }
 }
 
-@media (min-width: 813px) {
+@media (min-width: 1050px) {
   .conteiner .header-conteiner .navigation,
   .conteiner .header-conteiner .contacts {
     display: block;
@@ -118,6 +134,7 @@ ul {
 }
 
 .conteiner .header-conteiner .site-contacts li {
+  cursor: pointer;
   font-size: 16px;
   border-radius: 35px;
   padding: 10px 20px;
@@ -140,6 +157,8 @@ ul {
 
 .conteiner .header-conteiner .site-contacts li:nth-last-child(1) {
   border: 2px solid #0087c8;
+  color: #0087c8;
+  text-transform: uppercase;
   border-radius: 35px;
   padding: 15px 28px;
   font-size: 16px;
@@ -157,6 +176,7 @@ ul {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .conteiner .header-conteiner .site-contacts li:nth-last-child(1):hover a, .conteiner .header-conteiner .site-contacts li:nth-last-child(1):focus a {
@@ -173,6 +193,7 @@ ul {
 }
 
 .conteiner .header-conteiner .site-navigation li {
+  cursor: pointer;
   font-size: 16px;
   border-radius: 35px;
   text-align: center;
@@ -221,7 +242,7 @@ ul {
 .conteiner .promoution h1 {
   font-weight: bold;
   color: #0087c8;
-  padding-left: 45px;
+  padding-left: 20px;
 }
 
 @media (min-width: 320px) {
@@ -246,7 +267,7 @@ ul {
 @media (min-width: 320px) {
   .conteiner .promoution h3 {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 20px;
   }
 }
 
@@ -266,8 +287,7 @@ ul {
 @media (min-width: 320px) {
   .conteiner .promoution p {
     font-size: 14px;
-    line-height: 16px;
-    text-transform: none;
+    line-height: 20px;
     padding: 0 15px;
   }
 }
@@ -276,7 +296,6 @@ ul {
   .conteiner .promoution p {
     font-size: 20px;
     line-height: 30px;
-    text-transform: uppercase;
     padding: 0;
   }
 }
@@ -291,18 +310,6 @@ ul {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-@media (min-width: 320px) {
-  .conteiner .products {
-    margin-top: 0;
-  }
-}
-
-@media (min-width: 813px) {
-  .conteiner .products {
-    margin-top: 30px;
-  }
 }
 
 @media (min-width: 375px) {
@@ -329,27 +336,6 @@ ul {
   }
 }
 
-.conteiner .products .manufacture,
-.conteiner .products .agrochemicals,
-.conteiner .products .food-fluid,
-.conteiner .products .industrial-fluid,
-.conteiner .products .household-chemicals,
-.conteiner .products .building-fluid,
-.conteiner .products .auto-chemicals,
-.conteiner .products .caps {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 100%;
-  cursor: pointer;
-  display: block;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #0f2035;
-  border: 3px solid #0087c8;
-  border-radius: 30px;
-}
-
 @media (min-width: 320px) {
   .conteiner .products .manufacture,
   .conteiner .products .agrochemicals,
@@ -358,6 +344,7 @@ ul {
   .conteiner .products .household-chemicals,
   .conteiner .products .building-fluid,
   .conteiner .products .auto-chemicals,
+  .conteiner .products .medical_indastry,
   .conteiner .products .caps {
     max-width: 300px;
     min-height: 350px;
@@ -373,6 +360,7 @@ ul {
   .conteiner .products .household-chemicals,
   .conteiner .products .building-fluid,
   .conteiner .products .auto-chemicals,
+  .conteiner .products .medical_indastry,
   .conteiner .products .caps {
     max-width: 230px;
     min-height: 300px;
@@ -388,10 +376,9 @@ ul {
   .conteiner .products .household-chemicals,
   .conteiner .products .building-fluid,
   .conteiner .products .auto-chemicals,
+  .conteiner .products .medical_indastry,
   .conteiner .products .caps {
     max-width: 320px;
-    min-height: 382px;
-    margin-bottom: 10px;
   }
 }
 
@@ -402,11 +389,13 @@ ul {
 .conteiner .products .household-chemicals h3,
 .conteiner .products .building-fluid h3,
 .conteiner .products .auto-chemicals h3,
+.conteiner .products .medical_indastry h3,
 .conteiner .products .caps h3 {
   height: 66px;
   font-weight: bold;
   color: #0087c8;
   text-align: center;
+  line-height: 30px;
 }
 
 @media (min-width: 320px) {
@@ -417,9 +406,9 @@ ul {
   .conteiner .products .household-chemicals h3,
   .conteiner .products .building-fluid h3,
   .conteiner .products .auto-chemicals h3,
+  .conteiner .products .medical_indastry h3,
   .conteiner .products .caps h3 {
     font-size: 20px;
-    line-height: 18px;
     padding-top: 20px;
   }
 }
@@ -432,85 +421,95 @@ ul {
   .conteiner .products .household-chemicals h3,
   .conteiner .products .building-fluid h3,
   .conteiner .products .auto-chemicals h3,
+  .conteiner .products .medical_indastry h3,
   .conteiner .products .caps h3 {
     font-size: 24px;
-    line-height: 26px;
     padding-top: 0px;
   }
 }
 
-.conteiner .products .manufacture p,
-.conteiner .products .agrochemicals p,
-.conteiner .products .food-fluid p,
-.conteiner .products .industrial-fluid p,
-.conteiner .products .household-chemicals p,
-.conteiner .products .building-fluid p,
-.conteiner .products .auto-chemicals p,
-.conteiner .products .caps p {
-  font-weight: 200;
-  color: #42515b;
-  padding: 0 15px;
-  text-transform: none;
+.conteiner .products .manufacture .picture__conteiner {
+  background-color: #ffffff;
+  border: 3px solid #0087c8;
+  border-radius: 50%;
+  width: 260px;
+  height: 260px;
+  margin: auto;
 }
 
 @media (min-width: 320px) {
-  .conteiner .products .manufacture p,
-  .conteiner .products .agrochemicals p,
-  .conteiner .products .food-fluid p,
-  .conteiner .products .industrial-fluid p,
-  .conteiner .products .household-chemicals p,
-  .conteiner .products .building-fluid p,
-  .conteiner .products .auto-chemicals p,
-  .conteiner .products .caps p {
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: none;
-    padding: 0 15px;
+  .conteiner .products .manufacture .picture__conteiner {
+    width: 200px;
+    height: 200px;
   }
 }
 
-@media (min-width: 813px) {
-  .conteiner .products .manufacture p,
-  .conteiner .products .agrochemicals p,
-  .conteiner .products .food-fluid p,
-  .conteiner .products .industrial-fluid p,
-  .conteiner .products .household-chemicals p,
-  .conteiner .products .building-fluid p,
-  .conteiner .products .auto-chemicals p,
-  .conteiner .products .caps p {
-    font-size: 20px;
-    line-height: 22px;
-    text-transform: uppercase;
-    padding: 0;
+@media (min-width: 550px) {
+  .conteiner .products .manufacture .picture__conteiner {
+    width: 200px;
+    height: 200px;
   }
 }
 
-.conteiner .products .manufacture {
-  background-image: url(../images/pic-color.png);
-  background-size: 25%;
-  background-position-y: 90%;
-  background-position-x: 90%;
-  background-repeat: no-repeat;
+.conteiner .products .manufacture .picture__conteiner img {
+  width: 45%;
+  display: block;
+  margin: auto;
+  margin-top: 15%;
 }
 
-.conteiner .products .food-fluid,
-.conteiner .products .industrial-fluid,
-.conteiner .products .household-chemicals,
-.conteiner .products .building-fluid,
-.conteiner .products .auto-chemicals,
-.conteiner .products .agrochemicals {
-  background-image: url(../images/pic1.png);
-  background-size: 25%;
-  background-position-y: 90%;
-  background-position-x: 90%;
-  background-repeat: no-repeat;
+.conteiner .products .food-fluid .picture__conteiner,
+.conteiner .products .industrial-fluid .picture__conteiner,
+.conteiner .products .household-chemicals .picture__conteiner,
+.conteiner .products .building-fluid .picture__conteiner,
+.conteiner .products .auto-chemicals .picture__conteiner,
+.conteiner .products .medical_indastry .picture__conteiner,
+.conteiner .products .agrochemicals .picture__conteiner {
+  background-color: #ffffff;
+  border: 3px solid #0087c8;
+  border-radius: 50%;
+  width: 260px;
+  height: 260px;
+  margin: auto;
 }
 
-.conteiner .products .caps {
-  background-image: url(../images/pic2.png);
-  background-size: 45%;
-  background-position: bottom right;
-  background-repeat: no-repeat;
+@media (min-width: 320px) {
+  .conteiner .products .food-fluid .picture__conteiner,
+  .conteiner .products .industrial-fluid .picture__conteiner,
+  .conteiner .products .household-chemicals .picture__conteiner,
+  .conteiner .products .building-fluid .picture__conteiner,
+  .conteiner .products .auto-chemicals .picture__conteiner,
+  .conteiner .products .medical_indastry .picture__conteiner,
+  .conteiner .products .agrochemicals .picture__conteiner {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (min-width: 550px) {
+  .conteiner .products .food-fluid .picture__conteiner,
+  .conteiner .products .industrial-fluid .picture__conteiner,
+  .conteiner .products .household-chemicals .picture__conteiner,
+  .conteiner .products .building-fluid .picture__conteiner,
+  .conteiner .products .auto-chemicals .picture__conteiner,
+  .conteiner .products .medical_indastry .picture__conteiner,
+  .conteiner .products .agrochemicals .picture__conteiner {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.conteiner .products .food-fluid .picture__conteiner img,
+.conteiner .products .industrial-fluid .picture__conteiner img,
+.conteiner .products .household-chemicals .picture__conteiner img,
+.conteiner .products .building-fluid .picture__conteiner img,
+.conteiner .products .auto-chemicals .picture__conteiner img,
+.conteiner .products .medical_indastry .picture__conteiner img,
+.conteiner .products .agrochemicals .picture__conteiner img {
+  width: 56%;
+  display: block;
+  margin: auto;
+  margin-top: 15%;
 }
 
 .conteiner .products .owl-stage {
@@ -527,26 +526,9 @@ ul {
 .range__popUp,
 .individual-orders,
 .about-us {
-  max-width: 1205px;
+  max-width: 1200px;
   margin: auto;
-}
-
-@media (min-width: 320px) {
-  .range,
-  .range__popUp,
-  .individual-orders,
-  .about-us {
-    margin-bottom: 30px;
-  }
-}
-
-@media (min-width: 813px) {
-  .range,
-  .range__popUp,
-  .individual-orders,
-  .about-us {
-    margin-bottom: 60px;
-  }
+  margin-bottom: 30px;
 }
 
 .range h3,
@@ -556,6 +538,7 @@ ul {
   font-weight: bold;
   color: #0087c8;
   margin: 0;
+  padding: 10px;
 }
 
 @media (min-width: 320px) {
@@ -623,111 +606,70 @@ ul {
   }
 }
 
-.range {
-  height: 350px;
-  background-image: url(../images/range.png);
-  background-repeat: no-repeat;
-}
-
-@media (min-width: 320px) {
-  .range {
-    background-size: 30%;
-    background-position: bottom right;
-  }
-}
-
-@media (min-width: 736px) {
-  .range {
-    background-position: bottom;
-    background-position-x: 350px;
-    background-size: 40%;
-  }
-}
-
-@media (min-width: 813px) {
-  .range {
-    background-size: 45%;
-    background-position: bottom left;
-  }
-}
-
-.range p {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-@media (min-width: 320px) {
-  .range p {
-    width: 100%;
-    padding: 0 15px;
-  }
-}
-
-@media (min-width: 813px) {
-  .range p {
-    width: 50%;
-    margin-left: auto;
-    padding: 0;
-  }
-}
-
-.range__popUp {
+.range .flex__conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.range .flex__conteiner p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 30px 0;
+  padding-left: 15px;
 }
 
 @media (min-width: 320px) {
-  .range__popUp {
-    padding-top: 40px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .range .flex__conteiner p {
+    width: 100%;
+    padding: 0 15px;
   }
 }
 
-@media (min-width: 813px) {
-  .range__popUp {
-    padding-top: 60px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+@media (min-width: 736px) {
+  .range .flex__conteiner p {
+    width: 50%;
+    padding: 0;
   }
 }
 
-.range__popUp span {
-  position: absolute;
+.range .flex__conteiner .range__picture {
+  margin: auto;
 }
 
 @media (min-width: 320px) {
-  .range__popUp span {
-    top: -20px;
-    left: 15px;
+  .range .flex__conteiner .range__picture {
+    width: 100%;
   }
 }
 
-@media (min-width: 667px) {
-  .range__popUp span {
-    top: -100px;
-    left: 60px;
+@media (min-width: 736px) {
+  .range .flex__conteiner .range__picture {
+    width: 50%;
   }
 }
 
-@media (min-width: 813px) {
-  .range__popUp span {
-    top: -20px;
-    left: 15px;
-  }
+.range .flex__conteiner .range__picture img {
+  max-width: 80%;
+  margin: auto;
+  display: block;
 }
 
-.range__popUp span a {
+.range button {
+  cursor: pointer;
   display: block;
   color: #ffffff;
   text-decoration: none;
+  margin: auto;
+  margin-top: 30px;
   border: 2px solid #0087c8;
+  color: #0087c8;
+  text-transform: uppercase;
   border-radius: 35px;
   padding: 15px 28px;
   font-size: 16px;
@@ -740,26 +682,61 @@ ul {
   opacity: 1;
 }
 
-.range__popUp span a:hover, .range__popUp span a:focus {
+.range button:hover, .range button:focus {
   background-color: #0087c8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: pointer;
-}
-
-.range__popUp span a:hover a, .range__popUp span a:focus a {
   color: #ffffff;
 }
 
-.range__popUp .range__popUp--item {
+.range button:hover a, .range button:focus a {
+  color: #ffffff;
+}
+
+@media (min-width: 736px) {
+  .range button {
+    margin: 0;
+  }
+}
+
+.range__popUp {
   display: none;
+}
+
+.range__popUp .range__popUp--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 320px) {
+  .range__popUp .range__popUp--list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .range__popUp .range__popUp--list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.range__popUp .range__popUp--list .range__popUp--item {
+  display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 285px;
-  min-height: 425px;
-  width: 100%;
+  min-width: 285px;
+  height: 425px;
   position: relative;
-  margin: 0 5px 10px 5px;
+  margin: 5px;
+  margin-bottom: 10px;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition: -webkit-transform 0.5s;
@@ -770,12 +747,48 @@ ul {
           transform-style: preserve-3d;
 }
 
-.range__popUp .range__popUp--item .flip {
+@media (min-width: 600px) {
+  .range__popUp .range__popUp--list .range__popUp--item {
+    margin: 2px 2px;
+  }
+}
+
+@media (min-width: 736px) {
+  .range__popUp .range__popUp--list .range__popUp--item {
+    margin: 10px 35px;
+  }
+}
+
+@media (min-width: 768px) {
+  .range__popUp .range__popUp--list .range__popUp--item {
+    margin: 10px 45px;
+  }
+}
+
+@media (min-width: 900px) {
+  .range__popUp .range__popUp--list .range__popUp--item {
+    margin: 5px 4px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .range__popUp .range__popUp--list .range__popUp--item {
+    margin: 10px 5px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .range__popUp .range__popUp--list .range__popUp--item {
+    margin: 10px 7px;
+  }
+}
+
+.range__popUp .range__popUp--list .range__popUp--item .flip {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-.range__popUp .range__popUp--item .range__popUp--item:active {
+.range__popUp .range__popUp--list .range__popUp--item .range__popUp--item:active {
   -webkit-transform: scale(0.97);
           transform: scale(0.97);
   -webkit-transition: -webkit-transform 0.2s;
@@ -784,8 +797,8 @@ ul {
   transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
-.range__popUp .range__popUp--item .front-face,
-.range__popUp .range__popUp--item .back-face {
+.range__popUp .range__popUp--list .range__popUp--item .front-face,
+.range__popUp .range__popUp--list .range__popUp--item .back-face {
   position: absolute;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
@@ -799,18 +812,18 @@ ul {
   background-color: #42515b;
 }
 
-.range__popUp .range__popUp--item .back-face p {
+.range__popUp .range__popUp--list .range__popUp--item .back-face p {
   text-align: center;
   margin: 10px 0 5px 0;
   text-transform: uppercase;
   color: #0087c8;
 }
 
-.range__popUp .range__popUp--item .back-face table {
+.range__popUp .range__popUp--list .range__popUp--item .back-face table {
   width: 100%;
 }
 
-.range__popUp .range__popUp--item .back-face table th {
+.range__popUp .range__popUp--list .range__popUp--item .back-face table th {
   text-align: left;
   font-size: 15px;
   color: #0087c8;
@@ -818,7 +831,7 @@ ul {
   padding-left: 10px;
 }
 
-.range__popUp .range__popUp--item .back-face table td {
+.range__popUp .range__popUp--list .range__popUp--item .back-face table td {
   color: #000;
   font-size: 14px;
   text-transform: none;
@@ -826,23 +839,41 @@ ul {
   padding-left: 10px;
 }
 
-.range__popUp .range__popUp--item .back-face table td:nth-child(2n) {
+.range__popUp .range__popUp--list .range__popUp--item .back-face table td:nth-child(2n) {
   text-align: right;
   padding-right: 15px;
 }
 
-.range__popUp .range__popUp--item .front-face {
+.range__popUp .range__popUp--list .range__popUp--item .front-face {
   padding-left: 45px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: linear-gradient(45deg, #020006, #0f2035, #172e49);
 }
 
-.range__popUp .range__popUp--item .front-face h4 {
+.range__popUp .range__popUp--list .range__popUp--item .front-face h4 {
   margin: 30px 0 0 0;
   font-size: 24px;
   font-weight: bold;
   color: #0087c8;
+}
+
+.range__popUp .range__popUp--list .range__popUp--item .front-face .product-photo {
+  height: 350px;
+  width: 285px;
+  margin-left: -45px;
+}
+
+.range__popUp .range__popUp--list .range__popUp--item .front-face .product-photo img {
+  display: block;
+  height: 80%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.range__popUp .range__popUp--list .range__popUp--item .front-face .product-photo .BP0025 {
+  height: 60%;
+  padding-top: 50px;
 }
 
 .range__popUp .range__popUp--item:hover .front-face {
@@ -863,70 +894,145 @@ ul {
   display: block;
 }
 
-.individual-orders {
-  height: 350px;
-  background-image: url(../images/individual.png);
-  background-size: 30%;
-  background-position: bottom;
-  background-position-x: 90%;
-  background-repeat: no-repeat;
+.individual-orders h3 {
+  line-height: 30px;
 }
 
-@media (min-width: 320px) {
-  .individual-orders p {
-    width: 100%;
-  }
+.individual-orders .flex__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-@media (min-width: 813px) {
-  .individual-orders p {
-    width: 50%;
-  }
-}
-
-.about-us {
-  background-size: 40%;
-  background-position: center;
-  background-position-x: 10%;
-  background-repeat: no-repeat;
-}
-
-@media (min-width: 320px) {
-  .about-us {
-    background-image: none;
-  }
-}
-
-@media (min-width: 813px) {
-  .about-us {
-    background-image: url(../images/img-1.jpg);
-    min-height: 350px;
-  }
-}
-
-.about-us p {
+.individual-orders .flex__conteiner p {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 30px 0;
 }
 
 @media (min-width: 320px) {
-  .about-us p {
+  .individual-orders .flex__conteiner p {
     width: 100%;
     padding: 0 15px;
   }
 }
 
-@media (min-width: 813px) {
-  .about-us p {
+@media (min-width: 736px) {
+  .individual-orders .flex__conteiner p {
     width: 50%;
-    margin-left: auto;
     padding: 0;
   }
 }
 
+.individual-orders .flex__conteiner .individual-orders__picture {
+  margin: auto;
+}
+
+@media (min-width: 320px) {
+  .individual-orders .flex__conteiner .individual-orders__picture {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media (min-width: 736px) {
+  .individual-orders .flex__conteiner .individual-orders__picture {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 50%;
+  }
+}
+
+.individual-orders .flex__conteiner .individual-orders__picture img {
+  max-width: 80%;
+  margin: auto;
+  display: block;
+}
+
+.about-us .flex__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.about-us .flex__conteiner .about-us--text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 320px) {
+  .about-us .flex__conteiner .about-us--text {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 813px) {
+  .about-us .flex__conteiner .about-us--text {
+    padding: 0;
+    margin-top: 30px;
+  }
+}
+
+.about-us .flex__conteiner .about-us--reasons {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+@media (min-width: 320px) {
+  .about-us .flex__conteiner .about-us--reasons {
+    width: 100%;
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 510px) {
+  .about-us .flex__conteiner .about-us--reasons {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 813px) {
+  .about-us .flex__conteiner .about-us--reasons {
+    width: 45%;
+    padding: 0;
+  }
+}
+
+.about-us .flex__conteiner .about-us__picture {
+  display: none;
+  max-height: 308px;
+}
+
+@media (min-width: 510px) {
+  .about-us .flex__conteiner .about-us__picture {
+    display: block;
+  }
+}
+
+.about-us .flex__conteiner .about-us__picture img {
+  height: 100%;
+  margin: auto;
+}
+
 .main-footer {
-  max-width: 1305px;
-  margin-bottom: 40px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .main-footer .main-conteiner {
@@ -935,8 +1041,25 @@ ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .main-footer .main-conteiner {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 570px) {
+  .main-footer .main-conteiner {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 @media (min-width: 813px) {
@@ -949,18 +1072,17 @@ ul {
   color: #0087c8;
   text-transform: none;
   display: block;
-  padding: 30px;
+}
+
+@media (min-width: 500px) {
+  .main-footer .main-conteiner .main-footer-conteiner {
+    padding-top: 0;
+  }
 }
 
 @media (min-width: 736px) {
   .main-footer .main-conteiner .main-footer-conteiner {
     width: 40%;
-  }
-}
-
-@media (min-width: 568px) {
-  .main-footer .main-conteiner .main-footer-conteiner {
-    padding: 0;
   }
 }
 
@@ -1008,21 +1130,30 @@ ul {
 
 @media (min-width: 568px) {
   .main-footer .main-conteiner .map {
-    width: 40%;
+    width: 500px;
   }
 }
 
-@media (min-width: 320px) {
-  .main-footer .main-conteiner .map iframe {
-    max-width: 300px;
+@media (min-width: 736px) {
+  .main-footer .main-conteiner .map {
+    width: 400px;
   }
 }
 
-@media (min-width: 568px) {
-  .main-footer .main-conteiner .map iframe {
-    height: 100%;
-    width: 100%;
-    max-width: 500px;
+@media (min-width: 1024px) {
+  .main-footer .main-conteiner .map {
+    width: 500px;
   }
+}
+
+@media (min-width: 1200px) {
+  .main-footer .main-conteiner .map {
+    width: 600px;
+  }
+}
+
+.main-footer .main-conteiner .map iframe {
+  height: 100%;
+  width: 100%;
 }
 /*# sourceMappingURL=all.css.map */

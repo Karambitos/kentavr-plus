@@ -57,6 +57,8 @@ $black: #000;
         color: #014591;
         position: fixed;
         top: 0;
+        height: 400px;
+        width: 540px;
 
         background-color: #87b8e9;
         margin: auto;
@@ -64,22 +66,21 @@ $black: #000;
         border-radius: 30px;
 
         @media (min-width: 320px) {
-            margin: 10px;
-            margin-top: 30%;
-            min-width: 300px;
-            left: 0;
+            height: 400px;
+            width: 300px;
+            left: 50%;
+            top: 50%;
+            margin-top: -200px;
+            margin-left: -150px;
         }
 
         @media (min-width: 720px) {
-            margin-top: 15px;
-            max-height: 390px;
-            margin-left: 103px;
-        }
-
-        @media (min-width: 768px) {
-            margin-top: 20%;
-            left: 40%;
-            max-height: 535px;
+            height: 420px;
+            width: 540px;
+            left: 50%;
+            top: 50%;
+            margin-top: -210px;
+            margin-left: -270px;
         }
 
         h3{

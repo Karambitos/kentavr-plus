@@ -1,19 +1,20 @@
 const popUp = document.querySelector(".range__popUp--button");
-const popUpItem = document.querySelectorAll(".range__popUp--item");
+const popUpItems = document.querySelector(".range__popUp");
 const backFace = document.querySelectorAll(".back-face");
 const frontFace = document.querySelectorAll(".front-face");
 
 
 popUp.addEventListener('click', (event) => {
     event.preventDefault();
-    popUpItem.forEach(elem => {
-        if (elem.style.display === '') {
-            elem.style.display = 'block';
-        } else {
-            elem.style.display = '';
-        }    
-    });
-    
+    console.log(popUp)
+    console.log(popUpItems)
+    popUpItems.classList.toggle("modal-show")
+
+        // if (popUpItems.style.display === 'none') {
+        //     elem.style.display = '';
+        // } else {
+        //     elem.style.display = 'none';
+        // }    
 });
 
 // popUpItem.forEach(elem => {

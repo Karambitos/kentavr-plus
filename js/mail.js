@@ -22,7 +22,7 @@ $(document).ready(function() {
 			data: th.serialize()
 		}).done(function() {
             // alert("Thank you!");
-            $('.js-overlay-thank-you').fadeIn();
+            $('.js-overlay-thank-you').fadeIn(); 
 			$(this).find('input').val('');
             $('#form').trigger('reset');
             $('.modal__background').fadeOut();
@@ -32,6 +32,8 @@ $(document).ready(function() {
 				// Done Functions
                 th.trigger("reset");
                 $('.js-overlay-thank-you').fadeOut();
+                location.reload();
+
 			}, 3000);
 		});
 		return false;

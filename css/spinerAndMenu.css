@@ -14,7 +14,7 @@
   }
 }
 
-@media (min-width: 813px) {
+@media (min-width: 1050px) {
   .spinner {
     display: none;
   }
