@@ -23,7 +23,6 @@ html {
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
-  scroll-behavior: smooth;
 }
 
 html textarea, html input {
