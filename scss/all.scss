@@ -66,8 +66,7 @@ $black: #000;
     }
 }
 
-.visually-hidden:not(focus):not(active)
-{
+.visually-hidden:not(focus):not(active){
 	position: absolute;
 
 	width: 1px;
@@ -81,6 +80,7 @@ $black: #000;
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
 
 html{
     background: $bg;
