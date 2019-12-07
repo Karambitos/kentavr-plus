@@ -743,7 +743,7 @@ button {
 
 @media (min-width: 736px) {
   .range__popUp .range__popUp--list .range__popUp--item {
-    margin: 10px 35px;
+    margin: 10px 30px;
   }
 }
 
@@ -964,7 +964,7 @@ button {
       justify-content: space-around;
 }
 
-.about-us .flex__conteiner .about-us--text {
+.about-us .flex__conteiner p.about-us--text {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
@@ -973,7 +973,7 @@ button {
 }
 
 @media (min-width: 320px) {
-  .about-us .flex__conteiner .about-us--text {
+  .about-us .flex__conteiner p.about-us--text {
     font-size: 14px;
     line-height: 16px;
     font-weight: 100;
@@ -982,7 +982,7 @@ button {
 }
 
 @media (min-width: 813px) {
-  .about-us .flex__conteiner .about-us--text {
+  .about-us .flex__conteiner p.about-us--text {
     font-size: 20px;
     line-height: 28px;
     font-weight: 200;
@@ -991,14 +991,14 @@ button {
   }
 }
 
-.about-us .flex__conteiner .about-us--reasons {
+.about-us .flex__conteiner p.about-us--reasons {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
 }
 
 @media (min-width: 320px) {
-  .about-us .flex__conteiner .about-us--reasons {
+  .about-us .flex__conteiner p.about-us--reasons {
     font-size: 14px;
     line-height: 16px;
     font-weight: 100;
@@ -1008,13 +1008,13 @@ button {
 }
 
 @media (min-width: 510px) {
-  .about-us .flex__conteiner .about-us--reasons {
+  .about-us .flex__conteiner p.about-us--reasons {
     margin-bottom: 20px;
   }
 }
 
 @media (min-width: 813px) {
-  .about-us .flex__conteiner .about-us--reasons {
+  .about-us .flex__conteiner p.about-us--reasons {
     font-size: 20px;
     line-height: 28px;
     font-weight: 200;

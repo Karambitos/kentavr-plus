@@ -565,7 +565,7 @@ button{
                 margin: 2px 2px;
             }
             @media (min-width: 736px) {
-                margin: 10px 35px;
+                margin: 10px 30px;
             }
             @media (min-width: 768px) {
                 margin: 10px 45px;
@@ -749,7 +749,8 @@ button{
         flex-wrap: wrap;
         justify-content: space-around;
         
-        .about-us--text{
+        p.about-us--text{
+
             box-sizing: border-box;
             width: 100%;
             margin: 0;
@@ -773,7 +774,7 @@ button{
             }
         } 
 
-        .about-us--reasons{
+        p.about-us--reasons{
             box-sizing: border-box;
             margin: 0;
 
