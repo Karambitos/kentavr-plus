@@ -648,6 +648,7 @@ button {
 .range .flex__conteiner .range__picture img {
   margin: auto;
   display: block;
+  width: 80%;
 }
 
 @media (min-width: 768px) {
@@ -972,6 +973,7 @@ button {
 }
 
 .individual-orders .flex__conteiner .individual-orders__picture img {
+  width: 80%;
   margin: auto;
   display: block;
 }
