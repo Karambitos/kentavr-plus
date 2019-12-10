@@ -321,7 +321,8 @@ button {
 @media (min-width: 813px) {
   .main-conteiner .promoution p {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 28px;
+    font-weight: 200;
     padding: 0;
   }
 }

@@ -263,7 +263,8 @@ button{
 
             @media (min-width: 813px) {
                 font-size: 20px;
-                line-height: 30px;
+                line-height: 28px;
+                font-weight: 200;
                 padding: 0;
             }
         }
@@ -810,14 +811,11 @@ button{
                     height: 160px;
                     overflow: auto;
                     margin-bottom: 20px;
-
-
                     @media (min-width: 320px) {
                         font-size: 14px;
                         line-height: 16px;
                         font-weight: 100;    
                         padding: 0;
-                        
                     }
                     @media (min-width: 813px) {
                         padding: 0;
