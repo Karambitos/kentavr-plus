@@ -1321,7 +1321,7 @@ button {
   }
 }
 
-@media (min-width: 730px) {
+@media (min-width: 736px) {
   .main-conteiner .main-footer .map {
     width: 400px;
   }
