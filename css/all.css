@@ -889,9 +889,10 @@ button {
   display: inline-block;
   border: 2px solid #0087c8;
   border-radius: 35px;
-  padding: 15px 28px;
-  background-color: transparent;
-  opacity: 1;
+  padding: 15px 28px 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-conteiner .news .slider_nav-left {
@@ -959,10 +960,30 @@ button {
           box-sizing: border-box;
   height: 70%;
   margin: 30px 0 0 0;
+  overflow: auto;
+}
+
+@media (min-width: 320px) {
+  .main-conteiner .news .news__item p {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 100;
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 736px) {
+  .main-conteiner .news .news__item p {
+    padding: 0;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 200;
+  }
 }
 
 .main-conteiner .news .news__item a {
-  margin-left: 80%;
+  margin-left: 66%;
+  color: #0087c8;
 }
 
 .main-conteiner .individual-orders h3 {
