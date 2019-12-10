@@ -886,13 +886,21 @@ button {
 
 .main-conteiner .news .owl-nav {
   cursor: pointer;
-  display: inline-block;
+  display: block;
   border: 2px solid #0087c8;
   border-radius: 35px;
-  padding: 15px 28px 13px;
+  padding: 10px 28px 8px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 80px;
+  margin: auto;
+}
+
+@media (min-width: 736px) {
+  .main-conteiner .news .owl-nav {
+    margin: 0;
+  }
 }
 
 .main-conteiner .news .slider_nav-left {
@@ -984,6 +992,26 @@ button {
 .main-conteiner .news .news__item a {
   margin-left: 66%;
   color: #0087c8;
+}
+
+@media (min-width: 320px) {
+  .main-conteiner .news .news__item a {
+    font-size: 14px;
+    margin-left: 66%;
+  }
+}
+
+@media (min-width: 736px) {
+  .main-conteiner .news .news__item a {
+    margin-left: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-conteiner .news .news__item a {
+    font-size: 18px;
+    margin-left: 90%;
+  }
 }
 
 .main-conteiner .individual-orders h3 {
