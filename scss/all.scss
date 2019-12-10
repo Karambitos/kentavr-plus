@@ -409,6 +409,7 @@ button{
                 }
                 @media (min-width: 736px) {
                     padding: 0;
+                    width: 50%;  /* iphone 7+  */
                 }
                 @media (min-width: 813px) {
                     font-size: 20px;
@@ -424,8 +425,8 @@ button{
                 @media (min-width: 320px) {
                     width: 100%;
                 }
-                @media (min-width: 736px) {
-                    // width: 50%;
+                @media (min-width: 736px) {   /* iPhone 7+  */
+                    width: 50%;
                 }
                 @media (min-width: 813px) {
                     width: 50%;
@@ -751,6 +752,7 @@ button{
                 }
                 @media (min-width: 736px) {
                     padding: 0;
+                    width: 50%;  /* iphone 7+  */
                 }
                 @media (min-width: 813px) {
                     width: 50%;
@@ -765,12 +767,15 @@ button{
                     width: 100%;
                     order: 1;
                 }    
-                // @media (min-width: 736px) {
-                // }
-                @media (min-width: 813px) {
+                @media (min-width: 736px) {   /* iphone 7+  */
                     order: -1;
                     width: 50%;
                 }
+
+                // @media (min-width: 813px) {
+                //     order: -1;
+                //     width: 50%;
+                // }
                 img{
                     width: 80%;
                     margin: auto;

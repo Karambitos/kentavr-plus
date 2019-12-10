@@ -584,6 +584,8 @@ button {
 @media (min-width: 736px) {
   .main-conteiner .range .flex__conteiner p {
     padding: 0;
+    width: 50%;
+    /* iphone 7+  */
   }
 }
 
@@ -604,6 +606,13 @@ button {
 @media (min-width: 320px) {
   .main-conteiner .range .flex__conteiner .range__picture {
     width: 100%;
+  }
+}
+
+@media (min-width: 736px) {
+  .main-conteiner .range .flex__conteiner .range__picture {
+    /* iPhone 7+  */
+    width: 50%;
   }
 }
 
@@ -1064,6 +1073,8 @@ button {
 @media (min-width: 736px) {
   .main-conteiner .individual-orders .flex__conteiner p {
     padding: 0;
+    width: 50%;
+    /* iphone 7+  */
   }
 }
 
@@ -1089,8 +1100,9 @@ button {
   }
 }
 
-@media (min-width: 813px) {
+@media (min-width: 736px) {
   .main-conteiner .individual-orders .flex__conteiner .individual-orders__picture {
+    /* iphone 7+  */
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
