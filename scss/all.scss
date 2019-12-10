@@ -282,7 +282,7 @@ button{
             @media (min-width: 375px) {
                 margin-left: 33px;
             }
-            @media (min-width: 736px) {
+            @media (min-width: 730px) {
                 margin-left: 15px;
             }
             @media (min-width: 800px) {
@@ -314,7 +314,7 @@ button{
                 min-height: 300px;
                 margin-bottom: 0;
             }
-            @media (min-width: 736px) {
+            @media (min-width: 730px) {
                 max-width: 320px;
                 // min-height: 382px;
             }
@@ -407,7 +407,7 @@ button{
                     width: 100%;
                     padding: 0 15px;
                 }
-                @media (min-width: 736px) {
+                @media (min-width: 730px) {
                     padding: 0;
                     width: 50%;  /* iphone 7+  */
                 }
@@ -425,7 +425,7 @@ button{
                 @media (min-width: 320px) {
                     width: 100%;
                 }
-                @media (min-width: 736px) {   /* iPhone 7+  */
+                @media (min-width: 730px) {   /* iPhone 7+  */
                     width: 50%;
                 }
                 @media (min-width: 813px) {
@@ -456,7 +456,7 @@ button{
     
             @include button ($blue); 
     
-            @media (min-width: 736px) {
+            @media (min-width: 730px) {
                 margin: 0;
             }
         }
@@ -487,7 +487,7 @@ button{
                 @media (min-width: 600px) {
                     margin: 2px 2px;
                 }
-                @media (min-width: 736px) {
+                @media (min-width: 730px) {
                     margin: 10px 30px;
                 }
                 @media (min-width: 768px) {
@@ -622,7 +622,7 @@ button{
             width: 100px;
             margin: auto;
 
-            @media (min-width: 736px) {
+            @media (min-width: 730px) {
                 margin: 0;
             }
         }
@@ -720,7 +720,7 @@ button{
                         font-size: 14px;
                         margin-left: 66%;
                     }
-                    @media (min-width: 736px) {
+                    @media (min-width: 730px) {
                         margin-left: 80%;
                     }
 
@@ -750,7 +750,7 @@ button{
                     width: 100%;
                     padding: 0 15px;
                 }
-                @media (min-width: 736px) {
+                @media (min-width: 730px) {
                     padding: 0;
                     width: 50%;  /* iphone 7+  */
                 }
@@ -767,7 +767,7 @@ button{
                     width: 100%;
                     order: 1;
                 }    
-                @media (min-width: 736px) {   /* iphone 7+  */
+                @media (min-width: 730px) {   /* iphone 7+  */
                     order: -1;
                     width: 50%;
                 }
@@ -883,7 +883,7 @@ button{
                 // padding: 0;
             }
 
-            @media (min-width: 736px) {
+            @media (min-width: 730px) {
                 width: 40%;
             }
             h3{
@@ -922,7 +922,7 @@ button{
         @media (min-width: 667px) {
             width: 300px;
         }
-        @media (min-width: 736px) {
+        @media (min-width: 730px) {
             width: 400px;
         }
         @media (min-width: 1024px) {

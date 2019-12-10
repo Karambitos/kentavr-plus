@@ -344,7 +344,7 @@ button {
   }
 }
 
-@media (min-width: 736px) {
+@media (min-width: 730px) {
   .main-conteiner .products .owl-stage {
     margin-left: 15px;
   }
@@ -395,7 +395,7 @@ button {
   }
 }
 
-@media (min-width: 736px) {
+@media (min-width: 730px) {
   .main-conteiner .products .manufacture,
   .main-conteiner .products .agrochemicals,
   .main-conteiner .products .food-fluid,
@@ -581,7 +581,7 @@ button {
   }
 }
 
-@media (min-width: 736px) {
+@media (min-width: 730px) {
   .main-conteiner .range .flex__conteiner p {
     padding: 0;
     width: 50%;
@@ -609,7 +609,7 @@ button {
   }
 }
 
-@media (min-width: 736px) {
+@media (min-width: 730px) {
   .main-conteiner .range .flex__conteiner .range__picture {
     /* iPhone 7+  */
     width: 50%;
@@ -674,7 +674,7 @@ button {
   color: #ffffff;
 }
 
-@media (min-width: 736px) {
+@media (min-width: 730px) {
   .main-conteiner .range button {
     margin: 0;
   }
@@ -733,7 +733,7 @@ button {
   }
 }
 
-@media (min-width: 736px) {
+@media (min-width: 730px) {
   .main-conteiner .range__popUp .range__popUp--list .range__popUp--item {
     margin: 10px 30px;
   }
@@ -904,7 +904,7 @@ button {
   margin: auto;
 }
 
-@media (min-width: 736px) {
+@media (min-width: 730px) {
   .main-conteiner .news .owl-nav {
     margin: 0;
   }
@@ -1028,7 +1028,7 @@ button {
   }
 }
 
-@media (min-width: 736px) {
+@media (min-width: 730px) {
   .main-conteiner .news .news__item a {
     margin-left: 80%;
   }
@@ -1070,7 +1070,7 @@ button {
   }
 }
 
-@media (min-width: 736px) {
+@media (min-width: 730px) {
   .main-conteiner .individual-orders .flex__conteiner p {
     padding: 0;
     width: 50%;
@@ -1100,7 +1100,7 @@ button {
   }
 }
 
-@media (min-width: 736px) {
+@media (min-width: 730px) {
   .main-conteiner .individual-orders .flex__conteiner .individual-orders__picture {
     /* iphone 7+  */
     -webkit-box-ordinal-group: 0;
@@ -1261,7 +1261,7 @@ button {
   }
 }
 
-@media (min-width: 736px) {
+@media (min-width: 730px) {
   .main-conteiner .main-footer .main-footer-conteiner {
     width: 40%;
   }
@@ -1321,7 +1321,7 @@ button {
   }
 }
 
-@media (min-width: 736px) {
+@media (min-width: 730px) {
   .main-conteiner .main-footer .map {
     width: 400px;
   }
