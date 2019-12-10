@@ -4,7 +4,7 @@ $(document).ready(function() {
       nav: true,
       loop:true,
       autoplay:true,
-      autoplayTimeout:5000,
+      autoplayTimeout:3000,
       autoplayHoverPause:true,
       responsive: {
         0: {
