@@ -51,7 +51,7 @@ $black: #000;
     left: 0;
 }
 
-.modal {
+.modal_form {
         z-index: 200;
         display: none;
         color: #014591;
@@ -59,12 +59,9 @@ $black: #000;
         top: 0;
         height: 400px;
         width: 540px;
-
         background-color: #87b8e9;
         margin: auto;
-
         border-radius: 30px;
-
         @media (min-width: 320px) {
             height: 400px;
             width: 300px;
@@ -73,7 +70,6 @@ $black: #000;
             margin-top: -200px;
             margin-left: -150px;
         }
-
         @media (min-width: 720px) {
             height: 420px;
             width: 540px;
@@ -82,16 +78,13 @@ $black: #000;
             margin-top: -210px;
             margin-left: -270px;
         }
-
         h3{
             padding: 10px;
             text-align: center;
-
             @media (min-width: 320px) {
                 font-size: 16px;
                 line-height: 18px;
             }
-    
             @media (min-width: 720px) {
                 font-size: 23px;
                 line-height: 30px;
@@ -99,13 +92,11 @@ $black: #000;
         }
     
         form{
-          
             .form__conteiner{
                 transition: 0s;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
-    
              input {
                 transition: 0s;
                 display: block; 
@@ -113,13 +104,10 @@ $black: #000;
                 margin-right: auto;
                 margin-bottom: 10px;
                 width: 80%;
-               
                 border: none;
                 padding: 5px;
-
                 @include placeholder {
                     color: #8c8c8b;
-                            
                     font-family: 'Roboto', sans-serif;
                     font-size: 16px;
                 }        
@@ -127,22 +115,17 @@ $black: #000;
         }
         
         .form-group{
-
             textarea{
                 transition: 0s;
                 display: block; 
                 margin-left: auto;
                 margin-right: auto;
                 margin-bottom: 20px;
-
                 width: 80%;
-
                 border: none;
                 padding: 5px;
-    
                 @include placeholder {
                     color: #8c8c8b;
-
                     font-family: 'Roboto', sans-serif;
                     font-size:16px
                 }                   
@@ -153,7 +136,6 @@ $black: #000;
                 margin: auto;
                 margin-bottom: 20px;
                 @include button (#014591); 
-                    
             }
         }       
     

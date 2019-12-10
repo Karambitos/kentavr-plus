@@ -6,62 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/spinerAndMenu.css">
-    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/modalForm.css">
     <link rel="stylesheet" href="./css/modalClose.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/animation.css">
     <title>kentavr-plus</title>
 </head>
 <body>
-    <div class="conteiner">
-        <header>
-            <nav class="main-nav">
-                <div class="header-conteiner">	
-                    <div class="logo">
-                        <a href="index.html" class="main-header-logo">
-                            <img src="./images/logo_kentavr.png"  alt="ЛОГОТИП Сайт консалтинг">
-                        </a> 
-                    </div><!-- /.logo -->
-                    <div class="navigation">
-                        <ul class="site-navigation site-nav__active">
-                            <!-- <li><a href="#">продукция</a></li> -->
-                            <li><a href="#about-us">о нас</a></li>
-                            <li><a href="#range">ассортимент</a></li>
-                            <li><a href="#contacts">контанты</a></li>
-                        </ul>
-                    </div><!-- /.navigation -->
-                    <div class="contacts">
-                        <ul class="site-contacts site-cont__active">
-                            <li class="site-contacts__item">
-                                <a href="tel:0800750440"> 0-800-750-440 </a>
-                            </li>
-                            <li class="site-contacts__item reCall animated pulse">
-                            <a href="#" class="button">Консультация</a>
-                            </li>
-                        </ul>
-                    </div><!-- /.contacts -->
-                    <div class="spinner">
-                        <span class="spinner-line diagonal part-1"></span>
-                        <span class="spinner-line horizontal"></span>
-                        <span class="spinner-line diagonal part-2"></span>
-                    </div><!-- /.spinner -->
-                </div><!-- /.header-conteiner -->
-            </nav>
-        </header>
-        <section class="promoution animated fadeInRight">
-            <div class="promoution__text">
-                <h1 class="main-title">Тара<br>в наличии<br>и под заказ</h1>
-                <h3>МЫ ПРЕДЛАГАЕМ ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ СОХРАНЕНИЯ И ТРАНСПОРТИРОВКИ ВАШЕГО УСПЕХА!</h3>
-                <p>
-                    Весь ассортимент предназначен для хранения и транспортировки технических 
-                    жидкостей, продуктов питания, средств бытовой химии (шампуни, мыло и прочее),
-                    строительной химии (грунтовки, шпаклевки, клей и прочее) и агррохимии 
-                    (пестециды, гербициды, минеральные удобрения и прочее)
-                </p>
-            </div><!-- /.promoution__text -->
-        </section>
+<section class="main-conteiner">
+  <header>
+    <nav class="main-nav">
+      <div class="header-conteiner">	
+        <div class="logo">
+          <a href="index.html" class="main-header-logo">
+            <img src="./images/logo_kentavr.png"  alt="ЛОГОТИП Сайт консалтинг">
+          </a> 
+        </div><!-- /.logo -->
+        <div class="navigation">
+          <ul class="navigation__list navigation__list__active">
+            <li><a href="#about-us">о нас</a></li>
+            <li><a href="#range">ассортимент</a></li>
+            <li><a href="#news">новости</a></li>
+            <li><a href="#contacts">контакты</a></li>
+          </ul>
+        </div><!-- /.navigation -->
+        <div class="contacts">
+          <ul class="contacts__list contacts__list__active">
+            <li class="contacts__item">
+              <a href="tel:0800750440"> 0-800-750-440 </a>
+            </li>
+            <li class="contacts__item reCall animated pulse">
+              <a href="#" class="button">Консультация</a>
+            </li>
+          </ul>
+        </div><!-- /.contacts -->
+        <div class="spinner">
+          <span class="spinner-line diagonal part-1"></span>
+          <span class="spinner-line horizontal"></span>
+          <span class="spinner-line diagonal part-2"></span>
+        </div><!-- /.spinner -->
+      </div><!-- /.header-conteiner -->
+    </nav>
+  </header>
         <main>
-            <div class="products owl-carousel">
+            <section class="promoution animated fadeInRight">
+                <div class="promoution__text">
+                    <h1 class="main-title">Тара<br>в наличии<br>и под заказ</h1>
+                    <h3>МЫ ПРЕДЛАГАЕМ ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ СОХРАНЕНИЯ И ТРАНСПОРТИРОВКИ ВАШЕГО УСПЕХА!</h3>
+                    <p>
+                        Весь ассортимент предназначен для хранения и транспортировки технических 
+                        жидкостей, продуктов питания, средств бытовой химии (шампуни, мыло и прочее),
+                        строительной химии (грунтовки, шпаклевки, клей и прочее) и агррохимии 
+                        (пестециды, гербициды, минеральные удобрения и прочее)
+                    </p>
+                </div><!-- /.promoution__text -->
+            </section><!-- /.promoution -->  
+            <section class="products owl-carousel slide-one">
                 <div class="manufacture">
                     <h3 class="products__title">Тара<br>под заказ</h3>
                     <div class="picture__conteiner">
@@ -103,25 +103,11 @@
                     <div class="picture__conteiner">
                         <img src="./images/medical_indastry1.png" alt="Пиктограмма отрасли">
                     </div>                
-                </div>
-                <!-- /.building-fluid -->             
-                <!-- <div class="caps">
-                    <h3 class="products__title">Крышки</h3>
-                    <div class="picture__conteiner">
-                        <img src="./images/pic1.png" alt="Пиктограмма отрасли">
-                    </div>
-                </div> -->
-                <!-- /.caps -->
-                <!-- <div class="building-fluid">
-                    <h3 class="products__title">Тара для строительной химии</h3>
-                    <div class="picture__conteiner">
-                        <img src="./images/pic1.png" alt="Пиктограмма отрасли">
-                    </div>                
-                </div> -->
-                <!-- /.building-fluid -->
-            </div> <!-- /.products owl-carousel -->  
-            <section class="range">
-                <h3 class="range--title" id="range">ШИРОКИЙ АССОРТИМЕНТ</h3>
+                </div>   
+                <!-- <div class="medical_indastry">  -->   
+            </section> <!-- /.products owl-carousel -->  
+            <section class="range" id="range">
+                <h3 class="range--title">ШИРОКИЙ АССОРТИМЕНТ</h3>
                   <div class="flex__conteiner">
                     <p class="range--text">Ассортимент продукции составляет пластиковая тара объемом от 250 мл до 20л.
                         Все полиэтиленовые емкости комплектуются крышками с контрольным кольцом, индукционной мембраной или уплотнительной прокладкой.
@@ -133,7 +119,7 @@
                       </div>
                   </div>
                     <button class="range__popUp--button">Подробнее</button>
-            </section>
+            </section><!-- /.range -->  
             <section class="range__popUp"> 
               <ul class="range__popUp--list">
                 <li class="range__popUp--item  animated fadeInRight">
@@ -1162,7 +1148,84 @@
                 </li>
                 <!-- /.T.20 --> 
               </ul>
-            </section>
+            </section><!-- /.range__popUp -->  
+            <section class="news owl-carousel slide-two" id="news">
+              <div class="news__item">
+                <h3 class="news__item__title">Новости</h3>
+                <p class="news__item__text">
+                    Lorem ipsum dolor, sit amet 
+                    consectetur adipisicing elit. Inventore, accusantium non
+                      perferendis vitae incidunt error itaque consequatur explicabo
+                      labore, ipsum quaerat tempore, nulla eos culpa suscipit dolor
+                    impedit distinctio consequuntur?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Veniam voluptate ipsum ab modi magni neque vitae autem suscipit 
+                      beatae repellat dicta commodi illum dolorem veritatis dolor, 
+                    atque cumque blanditiis. Sunt?
+                </p>
+                <a href="#">Подробнее</a>
+              </div><!-- /.news__item -->  
+              <div class="news__item">
+                <h3 class="news__item__title">Новости</h3>
+                <p class="news__item__text">
+                    Lorem ipsum dolor, sit amet 
+                    consectetur adipisicing elit. Inventore, accusantium non
+                     perferendis vitae incidunt error itaque consequatur explicabo
+                      labore, ipsum quaerat tempore, nulla eos culpa suscipit dolor
+                    impedit distinctio consequuntur?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Veniam voluptate ipsum ab modi magni neque vitae autem suscipit 
+                     beatae repellat dicta commodi illum dolorem veritatis dolor, 
+                    atque cumque blanditiis. Sunt?
+                </p>
+                <a href="#">Подробнее</a>
+              </div><!-- /.news__item -->  
+              <div class="news__item">
+                <h3 class="news__item__title">Новости</h3>
+                <p class="news__item__text">
+                    Lorem ipsum dolor, sit amet 
+                    consectetur adipisicing elit. Inventore, accusantium non
+                    perferendis vitae incidunt error itaque consequatur explicabo
+                      labore, ipsum quaerat tempore, nulla eos culpa suscipit dolor
+                    impedit distinctio consequuntur?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Veniam voluptate ipsum ab modi magni neque vitae autem suscipit 
+                    beatae repellat dicta commodi illum dolorem veritatis dolor, 
+                    atque cumque blanditiis. Sunt?
+                </p>
+                <a href="http://">Подробнее</a>
+              </div><!-- /.news__item -->  
+              <div class="news__item">
+                <h3 class="news__item__title">Новости</h3>
+                <p class="news__item__text">
+                    Lorem ipsum dolor, sit amet 
+                    consectetur adipisicing elit. Inventore, accusantium non
+                    perferendis vitae incidunt error itaque consequatur explicabo
+                      labore, ipsum quaerat tempore, nulla eos culpa suscipit dolor
+                    impedit distinctio consequuntur?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Veniam voluptate ipsum ab modi magni neque vitae autem suscipit 
+                    beatae repellat dicta commodi illum dolorem veritatis dolor, 
+                    atque cumque blanditiis. Sunt?
+                </p>
+                <a href="http://">Подробнее</a>
+              </div><!-- /.news__item -->  
+              <div class="news__item">
+                <h3 class="news__item__title">Новости</h3>
+                <p class="news__item__text">
+                    Lorem ipsum dolor, sit amet 
+                    consectetur adipisicing elit. Inventore, accusantium non
+                    perferendis vitae incidunt error itaque consequatur explicabo
+                      labore, ipsum quaerat tempore, nulla eos culpa suscipit dolor
+                    impedit distinctio consequuntur?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Veniam voluptate ipsum ab modi magni neque vitae autem suscipit 
+                    beatae repellat dicta commodi illum dolorem veritatis dolor, 
+                    atque cumque blanditiis. Sunt?
+                </p>
+                <a href="http://">Подробнее</a>
+              </div><!-- /.news__item -->  
+           </section> <!-- /.news owl-carousel-news-->
             <section class="individual-orders">
                 <h3 class="individual-orders--title">ИНДИВИДУАЛЬНЫЕ ЗАКАЗЫ</h3>
                   <div class="flex__conteiner">
@@ -1173,9 +1236,9 @@
                         <img src="./images/individual.png" alt="picture of products" class="about-us--img">
                       </div>
                   </div>  
-            </section>
-            <section class="about-us">
-                <h3 class="about-us--title" id="about-us">О нас</h3>
+            </section><!-- /.individual-orders -->  
+            <section class="about-us"  id="about-us">
+                <h3 class="about-us--title">О нас</h3>
                 <div class="flex__conteiner">
                     <p class="about-us--text">
                         ООО «Кентавр Плюс» предлагает высококачественную полиэтиленовую тару (канистры и флаконы). 
@@ -1195,37 +1258,36 @@
                         <img src="./images/about-us.jpg" alt="picture of products" class="about-us--img" style="max-height: 308px;" >
                       </div>
                   </div>  
-            </section>
+            </section><!-- /.about-us -->  
         </main>
         <footer class="main-footer">
-			<div class="main-conteiner">
-				<div class="main-footer-conteiner ">
-                    <h3 class="contacts-title" id="contacts">ООО "Кентавр Плюс"</h3>
-					<p class="footer-contacts">
-                        ул. Промышленная 11, <br> 
-                        пос. Васищево, Харьковская обл. <br>
-                        тел:<a href="tel:+380504042909"> +38 (050) 404-29-09</a><br>
-                        тел:<a href="tel:+380676363747"> +38 (067) 636-37-47</a><br> 
-                        тел:<a href="tel:+380733013909"> +38 (073) 301-39-09</a><br>
-                        Горячая линия: <a href="tel:0800750440"> 0-800-750-440 </a><br>
-                        (звонки бесплатны по всей Украине)<br>
-                        e-mail:<a href="mailto:office@kentavr-plus.com.ua?subject=Хочу_купить_канистры">office@kentavr-plus.com.ua</a><br>
-                        e-mail:<a href="mailto:sales01@kentavr-plus.com.ua?subject=Хочу_купить_канистры">sales01@kentavr-plus.com.ua</a><br>
-                        Время работы: пн–пт с 8:00 до 17:00<br>
-                        Перерыв: с 12:00 до 13:00<br>
-                        Заезд на территорию до 15:30<br>
-					</p>
-				</div>
-				<div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10163.091218952215!2d36.320946100892435!3d49.85226159146584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412773a711e77fc3%3A0xcf0d78699ade398e!2z0LLRg9C70LjRhtGPINCf0YDQvtC80LjRgdC70L7QstCwLCAxMSwg0JLQsNGB0LjRidC10LLQtSwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDYyNDk2!5e0!3m2!1sru!2sua!4v1575282935104!5m2!1sru!2sua"
-               style="border:0;" allowfullscreen="">
-            </iframe> 
-				</div>
-			</div>
-		</footer>
-</div> <!-- /.conteiner --> 
+            <div class="main-footer-conteiner" id="contacts">
+              <h3 class="contacts-title" >ООО "Кентавр Плюс"</h3>
+					      <p class="footer-contacts">
+                  ул. Промышленная 11, <br> 
+                  пос. Васищево, Харьковская обл. <br>
+                  тел:<a href="tel:+380504042909"> +38 (050) 404-29-09</a><br>
+                  тел:<a href="tel:+380676363747"> +38 (067) 636-37-47</a><br> 
+                  тел:<a href="tel:+380733013909"> +38 (073) 301-39-09</a><br>
+                  Горячая линия: <a href="tel:0800750440"> 0-800-750-440 </a><br>
+                  (звонки бесплатны по всей Украине)<br>
+                  e-mail:<a href="mailto:office@kentavr-plus.com.ua?subject=Хочу_купить_канистры">office@kentavr-plus.com.ua</a><br>
+                  e-mail:<a href="mailto:sales01@kentavr-plus.com.ua?subject=Хочу_купить_канистры">sales01@kentavr-plus.com.ua</a><br>
+                  Время работы: пн–пт с 8:00 до 17:00<br>
+                  Перерыв: с 12:00 до 13:00<br>
+                  Заезд на территорию до 15:30<br>
+					        </p>
+				    </div>
+				    <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10163.091218952215!2d36.320946100892435!3d49.85226159146584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412773a711e77fc3%3A0xcf0d78699ade398e!2z0LLRg9C70LjRhtGPINCf0YDQvtC80LjRgdC70L7QstCwLCAxMSwg0JLQsNGB0LjRidC10LLQtSwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDYyNDk2!5e0!3m2!1sru!2sua!4v1575282935104!5m2!1sru!2sua"
+              style="border:0;" allowfullscreen="">
+              </iframe> 
+			      </div>
+		    </footer>
+</section> <!-- /.main-conteiner --> 
 <div class="modal__background"></div>
-    <section class="modal animated zoomIn"> 
+    <!-- /.modal__background --> 
+<section class="modal_form animated zoomIn"> 
         <h3 class="modal__form--title">ОСТАВЬТЕ СВОЙ НОМЕР ТЕЛЕФОНА <br> И МЫ ВАМ ПЕРЕЗВОНИМ!</h3>
             <form><!-- action="telegram.php" method="POST" (Если отправлять сразу в telegram.php) -->
             <div class="form__conteiner">
@@ -1244,21 +1306,22 @@
                 <button type="submit" class="btn btn-primary">Отправить</button>
             </form>
         <button class="modal-form-close JSclose" type="button"><span></span></button>      
-    </section>
+</section><!-- /.modal_form --> 
 <section class="burger__menu animated fadeInRight">
   <h4 class="visually-hiddeh">Боковое меню</h4>
         <ul class="site-navigation">
             <!-- <li class="burger__buttons"><a href="#">продукция</a></li> -->
             <li class="burger__buttons"><a href="#about-us">о нас</a></li>
             <li class="burger__buttons"><a href="#range">ассортимент</a></li>
-            <li class="burger__buttons"><a href="#contacts">контанты</a></li>
+            <li class="burger__buttons"><a href="#news">новости</a></li>
+            <li class="burger__buttons"><a href="#contacts">контакты</a></li>
             <li class="burger__buttons"><a href="tel:0800750440"> 0-800-750-440</a></li>
             <li class="burger__buttons burger_reCall"><a href="#">Консультация</a></li>
         </ul>
             <a href="index.html" class="burger__logo">
                 <img src="./images/logo_kentavr_white.png"  alt="ЛОГОТИП Сайт консалтинг">
             </a> 
-</section>
+</section><!-- /.burger__menu --> 
 <section class="modal__close">
     <div class="overlay js-overlay-thank-you">
         <div class="popup js-thank-you">
@@ -1266,7 +1329,7 @@
             <div class="close-popup js-close-thank-you"></div>
         </div>
     </div>
-</section>
+</section><!-- /.modal__close --> 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/owl.carousel.min.css">    
     <script src="./js/owl.carousel.min.js"></script>
@@ -1276,5 +1339,6 @@
     <script src="./js/jquery.maskedinput.min.js"></script>
     <script src="./js/mask.js"></script>
     <script src="./js/mail.js"></script>
+    <!-- <script src="./js/scroll.js"></script> -->
 </body>
 </html>

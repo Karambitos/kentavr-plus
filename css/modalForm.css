@@ -10,7 +10,7 @@
   left: 0;
 }
 
-.modal {
+.modal_form {
   z-index: 200;
   display: none;
   color: #014591;
@@ -24,7 +24,7 @@
 }
 
 @media (min-width: 320px) {
-  .modal {
+  .modal_form {
     height: 400px;
     width: 300px;
     left: 50%;
@@ -35,7 +35,7 @@
 }
 
 @media (min-width: 720px) {
-  .modal {
+  .modal_form {
     height: 420px;
     width: 540px;
     left: 50%;
@@ -45,26 +45,26 @@
   }
 }
 
-.modal h3 {
+.modal_form h3 {
   padding: 10px;
   text-align: center;
 }
 
 @media (min-width: 320px) {
-  .modal h3 {
+  .modal_form h3 {
     font-size: 16px;
     line-height: 18px;
   }
 }
 
 @media (min-width: 720px) {
-  .modal h3 {
+  .modal_form h3 {
     font-size: 23px;
     line-height: 30px;
   }
 }
 
-.modal form .form__conteiner {
+.modal_form form .form__conteiner {
   -webkit-transition: 0s;
   transition: 0s;
   display: -webkit-box;
@@ -76,7 +76,7 @@
       justify-content: space-around;
 }
 
-.modal form .form__conteiner input {
+.modal_form form .form__conteiner input {
   -webkit-transition: 0s;
   transition: 0s;
   display: block;
@@ -88,31 +88,31 @@
   padding: 5px;
 }
 
-.modal form .form__conteiner input::-webkit-input-placeholder {
+.modal_form form .form__conteiner input::-webkit-input-placeholder {
   color: #8c8c8b;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-.modal form .form__conteiner input:-moz-placeholder {
+.modal_form form .form__conteiner input:-moz-placeholder {
   color: #8c8c8b;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-.modal form .form__conteiner input::-moz-placeholder {
+.modal_form form .form__conteiner input::-moz-placeholder {
   color: #8c8c8b;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-.modal form .form__conteiner input:-ms-input-placeholder {
+.modal_form form .form__conteiner input:-ms-input-placeholder {
   color: #8c8c8b;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-.modal form .form-group textarea {
+.modal_form form .form-group textarea {
   -webkit-transition: 0s;
   transition: 0s;
   display: block;
@@ -124,31 +124,31 @@
   padding: 5px;
 }
 
-.modal form .form-group textarea::-webkit-input-placeholder {
+.modal_form form .form-group textarea::-webkit-input-placeholder {
   color: #8c8c8b;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-.modal form .form-group textarea:-moz-placeholder {
+.modal_form form .form-group textarea:-moz-placeholder {
   color: #8c8c8b;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-.modal form .form-group textarea::-moz-placeholder {
+.modal_form form .form-group textarea::-moz-placeholder {
   color: #8c8c8b;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-.modal form .form-group textarea:-ms-input-placeholder {
+.modal_form form .form-group textarea:-ms-input-placeholder {
   color: #8c8c8b;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
-.modal form .btn {
+.modal_form form .btn {
   display: block;
   margin: auto;
   margin-bottom: 20px;
@@ -169,7 +169,7 @@
   color: #014591;
 }
 
-.modal form .btn:hover, .modal form .btn:focus {
+.modal_form form .btn:hover, .modal_form form .btn:focus {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-transition: 2s;
@@ -181,7 +181,7 @@
   border: 1px solid #0087c8;
 }
 
-.modal .modal-form-close {
+.modal_form .modal-form-close {
   position: absolute;
   top: -10px;
   right: -10px;
@@ -194,13 +194,13 @@
   border-radius: 50%;
 }
 
-.modal .modal-form-close span {
+.modal_form .modal-form-close span {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.modal .modal-form-close span::after {
+.modal_form .modal-form-close span::after {
   content: "";
   position: absolute;
   right: -11px;
@@ -212,7 +212,7 @@
   background-color: #000;
 }
 
-.modal .modal-form-close span::before {
+.modal_form .modal-form-close span::before {
   content: "";
   position: absolute;
   left: -11px;
@@ -227,4 +227,4 @@
 .modal-show {
   display: block;
 }
-/*# sourceMappingURL=modal.css.map */
+/*# sourceMappingURL=modalForm.css.map */

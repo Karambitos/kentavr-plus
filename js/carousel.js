@@ -1,8 +1,7 @@
 $(document).ready(function() {
-    $(".owl-carousel").owlCarousel({
+    $(".slide-one").owlCarousel({
       margin: 10,
       nav: true,
-      // navClass: ["slider_nav-left", "slider_nav-right"],
       loop:true,
       autoplay:true,
       autoplayTimeout:5000,
@@ -19,6 +18,21 @@ $(document).ready(function() {
         },
         1200: {
           items: 4
+        }
+      }
+    });
+
+    $(".slide-two").owlCarousel({
+      margin: 10,
+      nav: true,
+      navClass: ["slider_nav-left", "slider_nav-right"],
+      loop:true,
+      autoplay:false,
+      autoplayTimeout:5000,
+      autoplayHoverPause:true,
+      responsive: {
+        0: {
+          items: 1
         }
       }
     });

@@ -1,3 +1,4 @@
+// jQuery
 $(document).ready(function() {
 	$("form").submit(function() { //Change
 		var th = $(this);
