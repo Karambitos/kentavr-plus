@@ -28,8 +28,6 @@ $(document).ready(function() {
       navClass: ["slider_nav-left", "slider_nav-right"],
       loop:true,
       autoplay:false,
-      autoplayTimeout:5000,
-      autoplayHoverPause:true,
       responsive: {
         0: {
           items: 1
