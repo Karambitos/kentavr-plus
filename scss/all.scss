@@ -581,7 +581,11 @@ main {
             h2{
                 color: #42515b; 
                 width: 100%;
-                margin: 0;
+                margin: 0 0 10px 0;
+
+                @media (min-width: 1024px) {
+                    margin: 0;
+                }
             }
             ul.about-us--reasons{
                 box-sizing: border-box;
@@ -624,6 +628,7 @@ main {
                     display: block;
                 }
                 img{
+                    max-height: 308px;
                     height: 100%;
                     margin: auto;
                 } 

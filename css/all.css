@@ -1497,7 +1497,13 @@ main .about-us .flex__conteiner h2 {
 main .about-us .flex__conteiner h2 {
   color: #42515b;
   width: 100%;
-  margin: 0;
+  margin: 0 0 10px 0;
+}
+
+@media (min-width: 1024px) {
+  main .about-us .flex__conteiner h2 {
+    margin: 0;
+  }
 }
 
 main .about-us .flex__conteiner ul.about-us--reasons {
@@ -1560,6 +1566,7 @@ main .about-us .flex__conteiner .about-us__picture {
 }
 
 main .about-us .flex__conteiner .about-us__picture img {
+  max-height: 308px;
   height: 100%;
   margin: auto;
 }
