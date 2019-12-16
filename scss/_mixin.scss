@@ -1,0 +1,66 @@
+@mixin button ($color) {
+    border: 2px solid $color;
+    color: $color;
+    text-transform: uppercase;
+    border-radius: 35px;
+    padding: 15px 28px;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center; 
+    background-color: transparent;
+    opacity: 1;
+    a{
+        color: $color;
+    }
+
+    &:hover,&:focus{
+        background-color: $color;
+        box-sizing: border-box;
+        cursor: pointer;
+        color: $white;
+         a{
+            color: $white;
+        }
+    }
+}
+
+// тел в header
+@mixin links ($color) { 
+    border-radius: 35px;
+    padding: 10px 20px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center; 
+    box-sizing: border-box;
+
+    &:hover,&:focus{
+        background-color: $color;
+         a{
+            color: $white;
+        }
+    }
+}
+
+// кнопки в header
+@mixin linksSmall ($color) {
+    border-radius: 35px;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center; 
+    box-sizing: border-box;
+
+    &:hover,&:focus{
+        background-color: $color;
+         a{
+            color: $white;
+        }
+    }
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder { @content;}
+    &:-moz-placeholder           { @content;}
+    &::-moz-placeholder          { @content;}
+    &:-ms-input-placeholder      { @content;}  
+  }
