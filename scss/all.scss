@@ -4,7 +4,6 @@
 @import "modalClose";
 @import "spinerAndMenu";
 
-
 // <!-- HEADER --> 
 header {
     max-width: 1305px;
@@ -13,12 +12,49 @@ header {
     @media (min-width: 1025px){
         padding: 0;
     }
+    .other_langs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding: 0;
+
+        @media (min-width: 320px) {
+            font-size: 10px;
+        }
+        @media (min-width: 1050px){
+            padding: 10px 15px 0 0;
+            font-size: 20px;
+        }
+
+        .other_langs--name{
+            margin-left: 10px;
+
+            a{
+                color: $blue;
+                text-decoration: none;
+                border: 1px solid $blue;
+                padding: 5px;
+
+                &:hover{
+                    color: $white;
+                    background: $blue;
+                }
+            }
+        }
+        .lang__active{
+            a{
+                color: $white;
+                background: $blue;
+            }
+            
+        }
+    }
      /* header */
      .header-conteiner{
         width: 100%;
         box-sizing: border-box;
         margin: auto;
-        padding: 30px 15px 5px 15px;
+        padding: 0 15px 5px 15px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -108,6 +144,7 @@ main {
     @media (min-width: 1025px){
         padding: 0;
     }
+
      /* <!-- promoution -->   */
     .promoution {
         background-image: url(../images/bg.png);

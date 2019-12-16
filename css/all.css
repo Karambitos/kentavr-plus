@@ -25,8 +25,7 @@ html {
   scroll-behavior: smooth;
 }
 
-html textarea,
-html input {
+html textarea, html input {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
@@ -519,12 +518,58 @@ header {
   }
 }
 
+header .other_langs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+}
+
+@media (min-width: 320px) {
+  header .other_langs {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1050px) {
+  header .other_langs {
+    padding: 10px 15px 0 0;
+    font-size: 20px;
+  }
+}
+
+header .other_langs .other_langs--name {
+  margin-left: 10px;
+}
+
+header .other_langs .other_langs--name a {
+  color: #0087c8;
+  text-decoration: none;
+  border: 1px solid #0087c8;
+  padding: 5px;
+}
+
+header .other_langs .other_langs--name a:hover {
+  color: #ffffff;
+  background: #0087c8;
+}
+
+header .other_langs .lang__active a {
+  color: #ffffff;
+  background: #0087c8;
+}
+
 header .header-conteiner {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: auto;
-  padding: 30px 15px 5px 15px;
+  padding: 0 15px 5px 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
