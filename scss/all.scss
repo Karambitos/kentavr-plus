@@ -734,7 +734,12 @@ main {
             min-height: 420px;
             margin: auto;
 
-            h2{
+            .news_picture{
+                height: 200px;
+                overflow:hidden;
+            }
+
+            h2{ 
                 font-weight: bold;
                 height: 30px;
                 color: $blue;
@@ -754,7 +759,7 @@ main {
                     color: $gray;
                     text-transform: none;
                     box-sizing: border-box;
-                    height: 160px;
+                    height: 300px;
                     overflow: auto;
                     margin-bottom: 20px;
                     @media (min-width: 320px) {

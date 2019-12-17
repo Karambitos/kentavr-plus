@@ -1680,6 +1680,11 @@ main .news .news__item {
   margin: auto;
 }
 
+main .news .news__item .news_picture {
+  height: 200px;
+  overflow: hidden;
+}
+
 main .news .news__item h2 {
   font-weight: bold;
   height: 30px;
@@ -1708,7 +1713,7 @@ main .news .news__item p {
   text-transform: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 160px;
+  height: 300px;
   overflow: auto;
   margin-bottom: 20px;
 }
