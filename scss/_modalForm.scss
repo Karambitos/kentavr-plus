@@ -1,5 +1,6 @@
 
-.modal__background {
+.modal__background,
+.burger__menu--bg{
     display: none;
     background: #000;
     height: 100%;
@@ -140,10 +141,4 @@
             }
         }
     }
-}
-
-
-
-.modal-show {
-    display: block;
 }

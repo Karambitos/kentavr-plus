@@ -1,7 +1,7 @@
 .spinner {
             box-sizing: border-box;
             cursor: pointer;
-            z-index: 99;
+            z-index: 102;
             height: 14px;
             width: 18px;
             margin: 14px 20px;
@@ -69,7 +69,7 @@
   text-transform: uppercase;
   overflow: auto;
 
-  z-index: 1;
+  z-index: 101;
       
   position: absolute;
   display: none;
@@ -114,5 +114,7 @@
     max-width: 200px;
     padding: 30px;
   }
+
+  
 }
 

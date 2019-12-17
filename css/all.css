@@ -44,7 +44,8 @@ button {
   text-transform: uppercase;
 }
 
-.modal__background {
+.modal__background,
+.burger__menu--bg {
   display: none;
   background: #000;
   height: 100%;
@@ -272,10 +273,6 @@ button {
   background-color: #000;
 }
 
-.modal-show {
-  display: block;
-}
-
 .modal__close .overlay {
   position: fixed;
   width: 100%;
@@ -366,7 +363,7 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: pointer;
-  z-index: 99;
+  z-index: 102;
   height: 14px;
   width: 18px;
   margin: 14px 20px;
@@ -460,7 +457,7 @@ button {
   font-weight: bold;
   text-transform: uppercase;
   overflow: auto;
-  z-index: 1;
+  z-index: 101;
   position: absolute;
   display: none;
   background-color: rgba(71, 72, 73, 0.93);
@@ -1882,5 +1879,9 @@ main .news .news__item time {
 .main-footer .map iframe {
   height: 100%;
   width: 100%;
+}
+
+.modal-show {
+  display: block;
 }
 /*# sourceMappingURL=all.css.map */
