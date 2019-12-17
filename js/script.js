@@ -13,6 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const popUp = document.querySelector('.modal_form');
         const JSclose = document.querySelector('.JSclose');
 
+        const popUpBT = document.querySelector(".range__popUp--button");
+        const popUpItems = document.querySelector(".range__popUp");
+
         const otherLangs = document.querySelectorAll('.other_langs--name');        
         // ============================================ 
         // ФУНКЦИЯ закрывает/открывает доступ к боди PopUP
@@ -106,4 +109,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });   
         });
+
+        //  Карточки с канистрами
+        popUpBT.addEventListener('click', (event) => {
+            event.preventDefault();
+            popUpItems.classList.toggle("modal-show")   
+        });
+        
 });
