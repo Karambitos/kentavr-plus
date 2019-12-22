@@ -13,8 +13,8 @@ $(document).ready(function() {
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-            url: "mail.php",//Change
-            data: th.serialize()
+      url: "mail.php",//Change
+      data: th.serialize()
         }).done(function() {
 			setTimeout(function() {
 				// Done Functions
@@ -23,27 +23,26 @@ $(document).ready(function() {
 		});
 		return false;
     });
-    
+    // telegramm 
     $("form").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-            url: "telegram.php",
+      url: "telegram.php",
 			data: th.serialize()
 		}).done(function() {
             // alert("Thank you!");
+            $('.modal__background').fadeOut();
+            $('.modal_form').fadeOut(); 
             $('.js-overlay-thank-you').fadeIn(); 
 			$(this).find('input').val('');
             $('#form').trigger('reset');
-            $('.modal__background').fadeOut();
-            $('.modal').fadeOut();
-            
 			setTimeout(function() {
 				// Done Functions
-                th.trigger("reset");
-                $('.js-overlay-thank-you').fadeOut();
-                location.reload();
-			}, 3000);
+          // th.trigger("reset");
+          $('.js-overlay-thank-you').fadeOut();
+          location.reload();
+			  }, 3000);
 		});
 		return false;
 	});

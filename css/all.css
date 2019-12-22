@@ -1,3 +1,54 @@
+.error {
+  margin: auto;
+  text-align: center;
+  min-height: 550px;
+  background-color: #42515b;
+}
+
+.error h1 {
+  font-size: 30vh;
+  color: white;
+  display: block;
+}
+
+.error p {
+  color: white;
+  margin-bottom: 60px;
+}
+
+.error span {
+  font-size: 30px;
+  color: red;
+}
+
+.error a {
+  text-decoration: none;
+  border: 2px solid #0087c8;
+  color: #0087c8;
+  text-transform: uppercase;
+  border-radius: 35px;
+  padding: 15px 28px;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.error a:hover, .error a:focus {
+  background-color: #0087c8;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  color: white;
+}
+
+.error a:hover a, .error a:focus a {
+  color: white;
+}
+
 button {
   -webkit-transition: 2s;
   transition: 2s;
@@ -808,6 +859,7 @@ main .promoution h1 {
 }
 
 main .promoution h3 {
+  text-transform: uppercase;
   color: #ffffff;
   padding-left: 20px;
 }
@@ -1713,7 +1765,7 @@ main .news .news__item p {
   text-transform: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 300px;
+  height: 200px;
   overflow: auto;
   margin-bottom: 20px;
 }

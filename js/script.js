@@ -98,17 +98,17 @@ document.addEventListener('DOMContentLoaded', () => {
              overflowHidden ();
         });
     
-        //  Переключение языков
-        otherLangs.forEach(elem => {  
-            elem.addEventListener('click', (event) => { 
-                if (!elem.classList.contains("lang__active")) {
-                    otherLangs.forEach(elem => {
-                        elem.classList.remove("lang__active");
-                    });
-                    elem.classList.add("lang__active");
-                }
-            });   
-        });
+        // //  Переключение языков
+        // otherLangs.forEach(elem => {  
+        //     elem.addEventListener('click', (event) => { 
+        //         if (!elem.classList.contains("lang__active")) {
+        //             otherLangs.forEach(elem => {
+        //                 elem.classList.remove("lang__active");
+        //             });
+        //             elem.classList.add("lang__active");
+        //         }
+        //     });   
+        // });
 
         //  Карточки с канистрами
         popUpBT.addEventListener('click', (event) => {
