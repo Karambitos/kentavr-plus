@@ -24,11 +24,11 @@ $(document).ready(function() {
 		return false;
     });
     // telegramm 
-    $("form").submit(function() { //Change
+    $("form").submit(function() { //Change3
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-      url: "telegram.php",
+      url: "telegram.php",//Change
 			data: th.serialize()
 		}).done(function() {
             // alert("Thank you!");

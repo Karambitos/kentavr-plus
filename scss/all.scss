@@ -470,15 +470,8 @@ main {
                         color: $blue;
                     }
                     table {
-                        width: 100%;
-    
-                        th {
-                            text-align: left;
-                            font-size: 15px;
-                            color: $blue;
-                            padding-top: 10px;
-                            padding-left: 10px;
-                            }
+                        width: 100%; 
+
                         td {
                             color: $black;
                             font-size: 14px;
@@ -488,7 +481,8 @@ main {
                             }
                         td:nth-child(2n){
                             text-align: right;
-                            padding-right: 15px;
+                            padding-right: 10px;
+                            padding-left: 0px;
                             }
                         }
                 }
