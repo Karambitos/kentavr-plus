@@ -679,6 +679,10 @@ main {
         display: flex;
         justify-content: space-around;
 
+        @media (min-width: 900px) {
+            margin-bottom: 30px;
+        }
+
         .owl-nav {
             cursor: pointer;
             display: flex;

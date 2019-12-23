@@ -9,8 +9,8 @@ $(document).ready(function() {
 	$("form").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
-			type: "POST",
-      url: "mail.php",//Change
+      type: "POST",
+      url: "../mail.php",//Change
       data: th.serialize()
         }).done(function() {
 			setTimeout(function() {
@@ -22,10 +22,11 @@ $(document).ready(function() {
     });
     // telegramm 
     $("form").submit(function() { //Change3
+      console.log('Работает')
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-      url: "telegram.php",//Change
+      url: "../telegram.php",//Change
 			data: th.serialize()
 		}).done(function() {
             // alert("Thank you!");

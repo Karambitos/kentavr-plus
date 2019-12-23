@@ -35,7 +35,7 @@ Header("HTTP/1.1 404 Not Found");
     <div class="error">
     <h1>404</h1>
     <p><span>Ой! </span>Мы не можем найти нужную вам страницу.</p>
-    <a href="index.html" class="button">Вернутся</a>
+    <a href="/" class="button">Вернутся</a>
     </div>
     
 </body>

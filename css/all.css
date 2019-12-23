@@ -1669,6 +1669,12 @@ main .news {
       justify-content: space-around;
 }
 
+@media (min-width: 900px) {
+  main .news {
+    margin-bottom: 30px;
+  }
+}
+
 main .news .owl-nav {
   cursor: pointer;
   display: -webkit-box;
