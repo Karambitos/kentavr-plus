@@ -60,8 +60,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         burgerReCall.addEventListener('click', (event) => {
             event.preventDefault();
-            burgerMenuBG.classList.toggle("modal-show");
-            spinnerClassToggle(); 
+            console.log('re')
+            // burgerMenuBG.classList.toggle("modal-show");
+            // spinnerClassToggle(); 
+            // popUpClassToggle();
+            // overflowHidden ();
             popUpClassToggle();
             overflowHidden ();
          });
