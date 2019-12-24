@@ -14,9 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const JSclose = document.querySelector('.JSclose');
 
         const popUpBT = document.querySelector(".range__popUp--button");
-        const popUpItems = document.querySelector(".range__popUp");
+        const popUpItems = document.querySelector(".range__popUp");   
 
-        const otherLangs = document.querySelectorAll('.other_langs--name');        
         // ============================================ 
         // ФУНКЦИЯ закрывает/открывает доступ к боди PopUP
             const overflowHidden = () => {
@@ -41,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 popUp.classList.toggle("modal-show"); 
             };
         // ============================================ 
-       
         // Боковое меню (работа спинера)
         spinner.addEventListener('click', (event) => {
             event.preventDefault();
@@ -64,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             overflowHidden ();
          });
         // Боковое меню (закрыть)
+        // ============================================ 
         burgerMenuBG.addEventListener('click', (event) => {
             event.preventDefault();
             burgerMenuBG.classList.toggle("modal-show");
@@ -72,6 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
          });
   
         //  Модальное окно обратной связи
+        // ============================================ 
         reCall.addEventListener('click', (event) => {
             event.preventDefault();
             popUpClassToggle();
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         //  ЗАКРЫТИЕ Модального окна обратной связи
-
+        // ============================================ 
         popUpBg.addEventListener('click', (event) => {
             event.preventDefault();
             popUpClassToggle();
@@ -95,23 +95,12 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', (event) => {
              overflowHidden ();
         });
-    
-        // //  Переключение языков
-        // otherLangs.forEach(elem => {  
-        //     elem.addEventListener('click', (event) => { 
-        //         if (!elem.classList.contains("lang__active")) {
-        //             otherLangs.forEach(elem => {
-        //                 elem.classList.remove("lang__active");
-        //             });
-        //             elem.classList.add("lang__active");
-        //         }
-        //     });   
-        // });
 
-        //  Карточки с канистрами
+        //  Кнопка Карточки с канистрами
+        // ============================================ 
         popUpBT.addEventListener('click', (event) => {
             event.preventDefault();
             popUpItems.classList.toggle("modal-show")   
-        });
-        
+            popUpBT.innerHTML = (popUpBT.innerHTML === 'Подробнее') ? popUpBT.innerHTML = 'Скрыть всё' : popUpBT.innerHTML = 'Подробнее';
+        });        
 });

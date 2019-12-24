@@ -10,7 +10,7 @@ $email = $_POST['user_email'];
 $message = $_POST['user_message'];
 
 $token = "1043795482:AAH7PT1JjjLUMQvkkFcHmODfriO3P14Y72s";
-$chat_id = "-379463991";
+$chat_id = "-355048322";
 $arr = array(
   'Имя: ' => $name,
   'Телефон: ' => $phone,

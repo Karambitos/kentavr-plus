@@ -365,37 +365,33 @@ main {
     
             .range__picture{
                 margin: auto;
+                margin-bottom: 30px;
                 @media (min-width: 320px) {
                     width: 100%;
                 }
                 @media (min-width: 730px) {   /* iPhone 7+  */
                     width: 50%;
                 }
-                @media (min-width: 813px) {
+                @media (min-width: 812px) {
                     width: 50%;
+                    margin: auto;
                 }    
                  img{
                 margin: auto;
                 display: block;
                 width: 80%;
-
-                    @media (min-width: 768px) {
-                        width: 40%;
-                    }
-
-                    @media (min-width: 1024px) {
-                        width: 80%;
-                    }
                 } 
             } 
         }
         button.range__popUp--button{
             cursor: pointer;
+            outline: none;
             color: $blue;
             @include button ($blue); 
             @media (min-width: 730px) {
                 margin: 0;
             }
+
         }
     }
     /* <!-- range__popUp -->  */
@@ -421,8 +417,12 @@ main {
                 transform: scale(1);
                 transition: transform 0.5s;
                 transform-style: preserve-3d; 
+
                 @media (min-width: 600px) {
                     margin: 2px 2px;
+                }
+                @media (min-width: 600px) {
+                    margin: 5px 15px;
                 }
                 @media (min-width: 730px) {
                     margin: 10px 30px;
@@ -537,6 +537,10 @@ main {
     .individual-orders{
         h3{
             line-height: 30px;
+            padding: 0;
+            @media (min-width: 812px) {
+               padding: 10px;
+            }
         }
         .flex__conteiner{
             display: flex;
@@ -578,8 +582,8 @@ main {
                     margin: auto;
                     display: block;
                     @media (min-width: 768px) {
-                        width: 40%;
-                    }    
+                        width: 60%;
+                    }
                     @media (min-width: 1024px) {
                         width: 80%;
                     }

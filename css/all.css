@@ -1186,6 +1186,7 @@ main .range .flex__conteiner p {
 
 main .range .flex__conteiner .range__picture {
   margin: auto;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 320px) {
@@ -1201,9 +1202,10 @@ main .range .flex__conteiner .range__picture {
   }
 }
 
-@media (min-width: 813px) {
+@media (min-width: 812px) {
   main .range .flex__conteiner .range__picture {
     width: 50%;
+    margin: auto;
   }
 }
 
@@ -1213,20 +1215,9 @@ main .range .flex__conteiner .range__picture img {
   width: 80%;
 }
 
-@media (min-width: 768px) {
-  main .range .flex__conteiner .range__picture img {
-    width: 40%;
-  }
-}
-
-@media (min-width: 1024px) {
-  main .range .flex__conteiner .range__picture img {
-    width: 80%;
-  }
-}
-
 main .range button.range__popUp--button {
   cursor: pointer;
+  outline: none;
   color: #0087c8;
   border: 2px solid #0087c8;
   color: #0087c8;
@@ -1315,6 +1306,12 @@ main .range__popUp .range__popUp--list .range__popUp--item {
 @media (min-width: 600px) {
   main .range__popUp .range__popUp--list .range__popUp--item {
     margin: 2px 2px;
+  }
+}
+
+@media (min-width: 600px) {
+  main .range__popUp .range__popUp--list .range__popUp--item {
+    margin: 5px 15px;
   }
 }
 
@@ -1460,6 +1457,13 @@ main .modal-show {
 
 main .individual-orders h3 {
   line-height: 30px;
+  padding: 0;
+}
+
+@media (min-width: 812px) {
+  main .individual-orders h3 {
+    padding: 10px;
+  }
 }
 
 main .individual-orders .flex__conteiner {
@@ -1535,7 +1539,7 @@ main .individual-orders .flex__conteiner .individual-orders__picture img {
 
 @media (min-width: 768px) {
   main .individual-orders .flex__conteiner .individual-orders__picture img {
-    width: 40%;
+    width: 60%;
   }
 }
 

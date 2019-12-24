@@ -10,7 +10,7 @@ $(document).ready(function() {
 		var th = $(this);
 		$.ajax({
       type: "POST",
-      url: "../mail.php",//Change
+      url: "/mail.php",//Change
       data: th.serialize()
         }).done(function() {
 			setTimeout(function() {
@@ -26,7 +26,7 @@ $(document).ready(function() {
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-      url: "../telegram.php",//Change
+      url: "/telegram.php",//Change
 			data: th.serialize()
 		}).done(function() {
             // alert("Thank you!");
