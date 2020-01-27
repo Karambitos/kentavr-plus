@@ -414,9 +414,9 @@ main {
                 position: relative;
                 margin: 5px;
                 margin-bottom: 10px;
-                transform: scale(1);
-                transition: transform 0.5s;
-                transform-style: preserve-3d; 
+                // transform: scale(1);
+                // transition: transform 0.5s;
+                // transform-style: preserve-3d; 
 
                 @media (min-width: 600px) {
                     margin: 2px 2px;
@@ -442,13 +442,7 @@ main {
                 @media (min-width: 1400px) {
                     margin: 10px 7px;
                 }
-                .flip{ 
-                    transform: rotateY(180deg);
-                }
-                .range__popUp--item:active{
-                    transform: scale(0.97);
-                    transition: transform 0.2s;
-                }                
+                
                 .front-face, 
                 .back-face{
                     position: absolute;
@@ -516,16 +510,28 @@ main {
                 }
             }
         }    
-        .range__popUp--item:hover {
+        .range__popUp--item.hover {
             .front-face {
                 transition: 2s;
                 transform: rotateY(180deg)
             }
         } 
-        .range__popUp--item:hover {
+        .range__popUp--item.hover {
             .back-face {
                 transition: 2s;
                 transform: rotateY(360deg)
+            }
+        }    
+        .range__popUp--item.hover__back {
+            .front-face {
+                transition: 2s;
+                transform: rotateY(360deg)
+            }
+        } 
+        .range__popUp--item.hover__back  {
+            .back-face {
+                transition: 2s;
+                transform: rotateY(180deg)
             }
         }    
     }
@@ -814,7 +820,7 @@ main {
             padding-top: 0;
         }
         @media (min-width: 570px) {
-            justify-content: space-between;
+            justify-content: space-around;
         }
         @media (min-width: 813px) {
             margin-bottom: 60px;
@@ -864,11 +870,19 @@ main {
             }
         }   
         .map{
+        @media (min-width: 320px) {
+            height: 400px;
+            margin-bottom: 60px;
+        }
+
         @media (min-width: 568px) {
-                width: 500px;
+            width: 500px;
+            margin-bottom: 30px;
         }
         @media (min-width: 667px) {
             width: 300px;
+            height: auto;
+            margin-bottom: 0;
         }
         @media (min-width: 736px) {
             width: 400px;

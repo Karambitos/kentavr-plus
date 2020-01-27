@@ -1,48 +1,44 @@
-// mask
-// ============================================
-$(document).ready(function (){
-    $('#user_phone').mask('+38 (999) 999-99-99');
-});
-// mail
-// ============================================
 $(document).ready(function() {
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-      type: "POST",
-      url: "/mail.php",//Change
-      data: th.serialize()
-        }).done(function() {
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-    });
+  // mask
+  // ============================================
+  $(document).ready(function (){
+    $('#user_phone').mask('+38 (999) 999-99-99');
+  });
     // telegramm 
-    $("form").submit(function() { //Change3
-      console.log('Работает')
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-      url: "/telegram.php",//Change
-			data: th.serialize()
-		}).done(function() {
-            // alert("Thank you!");
-            $('.modal__background').fadeOut();
-            $('.modal_form').fadeOut(); 
-            $('.js-overlay-thank-you').fadeIn(); 
-			$(this).find('input').val('');
-            $('#form').trigger('reset');
-			setTimeout(function() {
-				// Done Functions
-          // th.trigger("reset");
+    $("form").submit(function(e) { //Change
+      e.preventDefault();
+      console.log('ok')
+    var th = $(this);
+
+    $.ajax({
+      type: "POST",
+      url: "/telegram.php",//Change    
+      data: th.serialize(),
+      success: function(data){
+        if (data=='error') {
+          console.log('error');
+          $(".divError").fadeIn(); 
+          setTimeout(function() {
+          $(".divError").fadeOut();
+          }, 2000);
+        }else{
+          $.ajax({
+            type: "POST",
+            url: "/mail.php",//Change
+            data: th.serialize(),
+          });
+          $('.modal__background').fadeOut();
+          $('.modal_form').fadeOut(); 
+          $('.js-overlay-thank-you').fadeIn(); 
+          $(this).find('input').val('');
+          $('#form').trigger('reset');
+           setTimeout(function() {
           $('.js-overlay-thank-you').fadeOut();
-          location.reload();
-			  }, 3000);
-		});
-		return false;
+            location.reload();     
+         }, 3000);
+        }
+      }
+    });
 	});
 
     // Закрыть попап «спасибо»

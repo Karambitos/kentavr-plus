@@ -52,6 +52,7 @@
 button {
   -webkit-transition: 2s;
   transition: 2s;
+  outline: none;
 }
 
 .visually-hidden:not(focus):not(active) {
@@ -114,7 +115,6 @@ button {
   color: #014591;
   position: fixed;
   top: 0;
-  height: 400px;
   width: 540px;
   background-color: #87b8e9;
   margin: auto;
@@ -123,18 +123,16 @@ button {
 
 @media (min-width: 320px) {
   .modal_form {
-    height: 400px;
-    width: 300px;
+    width: 350px;
     left: 50%;
     top: 50%;
     margin-top: -200px;
-    margin-left: -150px;
+    margin-left: -175px;
   }
 }
 
 @media (min-width: 720px) {
   .modal_form {
-    height: 420px;
     width: 540px;
     left: 50%;
     top: 50%;
@@ -247,6 +245,21 @@ button {
   font-size: 16px;
 }
 
+@media (min-width: 320px) {
+  .modal_form form .g-recaptcha {
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 720px) {
+  .modal_form form .g-recaptcha {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+}
+
 .modal_form form .btn {
   display: block;
   margin: auto;
@@ -323,6 +336,23 @@ button {
   width: 21px;
   height: 2px;
   background-color: #000;
+}
+
+.divError {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 95px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 25px;
+  background-color: #87b8e9;
+  color: #014591;
+  border-radius: 30px;
+  border: 1px solid #014591;
+  text-align: center;
 }
 
 .modal__close .overlay {
@@ -1293,14 +1323,6 @@ main .range__popUp .range__popUp--list .range__popUp--item {
   position: relative;
   margin: 5px;
   margin-bottom: 10px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 
 @media (min-width: 600px) {
@@ -1349,20 +1371,6 @@ main .range__popUp .range__popUp--list .range__popUp--item {
   main .range__popUp .range__popUp--list .range__popUp--item {
     margin: 10px 7px;
   }
-}
-
-main .range__popUp .range__popUp--list .range__popUp--item .flip {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-main .range__popUp .range__popUp--list .range__popUp--item .range__popUp--item:active {
-  -webkit-transform: scale(0.97);
-          transform: scale(0.97);
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 main .range__popUp .range__popUp--list .range__popUp--item .front-face,
@@ -1437,18 +1445,32 @@ main .range__popUp .range__popUp--list .range__popUp--item .front-face .product-
   padding-top: 50px;
 }
 
-main .range__popUp .range__popUp--item:hover .front-face {
+main .range__popUp .range__popUp--item.hover .front-face {
   -webkit-transition: 2s;
   transition: 2s;
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
 
-main .range__popUp .range__popUp--item:hover .back-face {
+main .range__popUp .range__popUp--item.hover .back-face {
   -webkit-transition: 2s;
   transition: 2s;
   -webkit-transform: rotateY(360deg);
           transform: rotateY(360deg);
+}
+
+main .range__popUp .range__popUp--item.hover__back .front-face {
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+main .range__popUp .range__popUp--item.hover__back .back-face {
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
 }
 
 main .modal-show {
@@ -1835,9 +1857,8 @@ main .news .news__item time {
 
 @media (min-width: 570px) {
   .main-footer {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -1907,15 +1928,25 @@ main .news .news__item time {
   cursor: pointer;
 }
 
+@media (min-width: 320px) {
+  .main-footer .map {
+    height: 400px;
+    margin-bottom: 60px;
+  }
+}
+
 @media (min-width: 568px) {
   .main-footer .map {
     width: 500px;
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: 667px) {
   .main-footer .map {
     width: 300px;
+    height: auto;
+    margin-bottom: 0;
   }
 }
 

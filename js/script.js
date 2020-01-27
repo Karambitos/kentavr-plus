@@ -17,6 +17,30 @@ document.addEventListener('DOMContentLoaded', () => {
         const popUpItems = document.querySelector(".range__popUp");   
 
         // ============================================ 
+        // ФУНКЦИЯ переключает надпись в кнопке popUpBT
+            // const details1 = ()=>{
+            //     switch (popUpBT.innerHTML) {
+            //         case 'Подробнее':
+            //             popUpBT.innerHTML = 'Скрыть всё'
+            //             break;
+            //         case 'Скрыть всё':
+            //             popUpBT.innerHTML === 'Подробнее'
+            //             break;
+            //         case 'more details':
+            //             popUpBT.innerHTML = 'hide all'
+            //             break;
+            //         case 'hide all':
+            //             popUpBT.innerHTML === 'more details'
+            //             break;
+            //         case 'Детальніше':
+            //             popUpBT.innerHTML = 'приховати все'
+            //             break;
+            //         case 'приховати все':
+            //             popUpBT.innerHTML === 'Детальніше'
+            //             break;
+            //     }
+            // }
+        // ============================================ 
         // ФУНКЦИЯ закрывает/открывает доступ к боди PopUP
             const overflowHidden = () => {
                 if (document.body.style.overflow === '') {
@@ -96,11 +120,23 @@ document.addEventListener('DOMContentLoaded', () => {
              overflowHidden ();
         });
 
-        //  Кнопка Карточки с канистрами
+        //  Кнопка открыть карточки товара
         // ============================================ 
         popUpBT.addEventListener('click', (event) => {
             event.preventDefault();
-            popUpItems.classList.toggle("modal-show")   
-            popUpBT.innerHTML = (popUpBT.innerHTML === 'Подробнее') ? popUpBT.innerHTML = 'Скрыть всё' : popUpBT.innerHTML = 'Подробнее';
-        });        
+            popUpItems.classList.toggle("modal-show");
+            // popUpBT.innerHTML = (popUpBT.innerHTML === 'Подробнее') ? popUpBT.innerHTML = 'Скрыть всё' : popUpBT.innerHTML = 'Подробнее';
+        });      
+
+         //  Карточки товара поворот
+        // ============================================ 
+        const rangeItem= document.querySelectorAll(".range__popUp--item");
+        rangeItem.forEach(elem => {
+            elem.addEventListener('click', (event) => {
+                let target = event.target.closest('li');
+                target.classList.toggle('hover');
+                target.classList.toggle('hover__back');
+             });
+        });
+
 });
