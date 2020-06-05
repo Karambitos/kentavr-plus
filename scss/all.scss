@@ -783,7 +783,15 @@ main {
             }
         }
     }
+    .news__title{
+        &--picture{
+            padding: 30px 0;
 
+            img{
+                width: 100%;
+            }
+        }
+    }
     /* <!-- news owl-carousel-news -->  */
     .news {
         margin: auto;
@@ -1020,7 +1028,7 @@ main {
             width: 600px;
         }
 
-        iframe {
+        img {
             height: 100%;
             width: 100%;
         }

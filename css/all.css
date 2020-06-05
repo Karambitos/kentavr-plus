@@ -1685,6 +1685,14 @@ main .about-us .flex__conteiner .about-us__picture img {
   margin: auto;
 }
 
+main .news__title--picture {
+  padding: 30px 0;
+}
+
+main .news__title--picture img {
+  width: 100%;
+}
+
 main .news {
   margin: auto;
   max-width: 1205px;
@@ -1968,7 +1976,7 @@ main .news .news__item time {
   }
 }
 
-.main-footer .map iframe {
+.main-footer .map img {
   height: 100%;
   width: 100%;
 }

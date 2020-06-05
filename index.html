@@ -34,9 +34,10 @@
     <link rel="stylesheet" href="./css/all.css">
     <link rel="stylesheet" href="./css/animation.css">
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link href="./en" href="./ua">    
-    <link rel="alternate" hreflang="en" href="/en/">
-    <link rel="alternate" hreflang="uk" href="/ua/"> 
+    <!-- <link rel="alternate" href="./en">    
+    <link rel="alternate" href="./ua">     -->
+    <link rel="alternate" hreflang="en" href="./en/">
+    <link rel="alternate" hreflang="uk" href="./ua/"> 
     <link rel="alternate" hreflang="ru" href="/">   
     <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
@@ -1212,6 +1213,9 @@
       </section><!-- /.about-us -->  
       <section class="news__title">
           <h3 class="news__item__title">Новости</h3>
+          <div class="news__title--picture" whidth="700">
+            <img src="./images/news-picture.jpg" alt="Конистры по скидке">
+          </div>
       </section><!-- /.news__title-->
       <section class="news owl-carousel slide-two" id="news">
         <div class="news__item">
@@ -1238,17 +1242,7 @@
           <h2 class="news__item__title">Уникальная линейка штабелируемых канистр!</h2>
           <p class="news__item__text">Конструкция новых штабелируемых канистр отличается уникальной системой рёбер жесткости. Благодаря такой конструкции канистра имеет большую геометрическую прочность. Это, в свою очередь, увеличивает сопротивляемость канистры к  вертикальным нагрузкам. Данная конструкция канистр была разработана совместно с европейскими экспертами и направлена на сохранение Вашей продукции – «ВАШЕГО УСПЕХА»!</p>
           <time datetime="2019-12-01 19:00">Декабрь 01. 2019</time>
-        </div>
-        <!-- /.news__item -->  
-        <!-- <div class="news__item">
-          <div class="news_picture">
-            <img src="./images/secondPlan/factory.png" alt="news_picture">
-          </div>
-          <h2 class="news__item__title">Ещё одна новость</h2>
-          <p class="news__item__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui sequi sint voluptate sit? Perspiciatis sunt nihil eveniet cupiditate nam dignissimos, vero ratione eius eos minima dolor accusamus sed, deleniti quo.</p>
-          <time datetime="2019-12-01 19:00">Декабрь 01. 2019</time>
-        </div> -->
-        <!-- /.news__item -->  
+        </div> 
       </section><!-- /.news owl-carousel-news-->
   </main>
   <footer class="main-footer">
@@ -1270,8 +1264,7 @@
             </p>
       </div>
       <div class="map">
-       
-	   
+       <a href="https://goo.gl/maps/Z9Tu4y4BcFnyLTVH7" title="Карта - как к нам добраться" target="_blank"><img src="./images/map.png" alt="Карта проезда"></a>
       </div>
   </footer>
 <div class="modal__background"></div>
@@ -1287,14 +1280,14 @@
             <div class="form-group">  
                 <textarea name="user_message" id="user_message" class="message form-control" placeholder="Сообщение" cols="40" rows="3"></textarea>
             </div>
-            <div class="g-recaptcha" name="g-recaptcha" data-sitekey="6LfSzskUAAAAADnA70J-g3349MtnvP6H7yrqEEf9"></div>
+            <div class="g-recaptcha" data-sitekey="6LfSzskUAAAAADnA70J-g3349MtnvP6H7yrqEEf9"></div>
                 <button type="submit" class="btn btn-primary">Отправить</button>
             </form>
         <button class="modal-form-close JSclose" type="button"><span></span></button>  
         <div class="divError">Вы не прошли валидацию reCaptcha</div>    
 </section><!-- /.modal_form --> 
-<section class="burger__menu--bg"></section>
-<!-- /.burger__menu--bg --> 
+<div class="burger__menu--bg"></div>
+
 <section class="burger__menu animated fadeInRight">
   <h4 class="visually-hiddeh">Боковое меню</h4>
         <ul class="site-navigation">
