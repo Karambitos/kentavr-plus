@@ -1,4 +1,4 @@
-button{
+button {
     transition: 2s;
     outline: none;
 }
@@ -6,24 +6,24 @@ button{
 $bg: linear-gradient(45deg, #020006, #0f2035, #172e49);
 $bgModal: rgb(39, 39, 38);
 $white: #ffffff;
-$gray: #42515b;
+$gray: #7b858c;
 $grayLink: rgba(71, 72, 73, 0.3);
 $blue: #0087c8;
 $black: #000;
 
-.visually-hidden:not(focus):not(active){
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	border: 0;
-	padding: 0;
-	white-space: nowrap;
-	clip-path: inset(100%);	
-	clip: rect(0 0 0 0);
+.visually-hidden:not(focus):not(active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
     overflow: hidden;
 }
 
-html{
+html {
     background: $bg;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -31,18 +31,20 @@ html{
     font-weight: bold;
     scroll-behavior: smooth;
 
-    textarea,input  {
+    textarea,
+    input {
         font-family: 'Roboto', sans-serif;
-        font-size:16px
+        font-size: 16px
     }
 }
-ul{
+
+ul {
     padding: 0;
     margin: 0;
-    list-style: none; 
+    list-style: none;
 }
 
-button{
+button {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     line-height: 30px;

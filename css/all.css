@@ -77,7 +77,8 @@ html {
   scroll-behavior: smooth;
 }
 
-html textarea, html input {
+html textarea,
+html input {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
@@ -692,7 +693,7 @@ header .header-conteiner .navigation {
 }
 
 header .header-conteiner .navigation .navigation__list a {
-  color: #42515b;
+  color: #7b858c;
   text-decoration: none;
 }
 
@@ -836,7 +837,6 @@ main {
   /* <!-- range__popUp -->  */
   /* <!-- individual-orders -->  */
   /* <!-- about-us-->  */
-  /* <!-- news title -->  */
   /* <!-- news owl-carousel-news -->  */
 }
 
@@ -910,7 +910,7 @@ main .promoution h3 {
 }
 
 main .promoution p {
-  color: #42515b;
+  color: #7b858c;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-transform: uppercase;
@@ -1164,7 +1164,7 @@ main .range__popUp p,
 main .individual-orders p,
 main .about-us p,
 main .news__title p {
-  color: #42515b;
+  color: #7b858c;
   text-transform: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1385,7 +1385,7 @@ main .range__popUp .range__popUp--list .range__popUp--item .back-face {
   cursor: pointer;
   border: 3px solid #0087c8;
   border-radius: 30px;
-  background-color: #42515b;
+  background-color: #7b858c;
 }
 
 main .range__popUp .range__popUp--list .range__popUp--item .back-face p {
@@ -1787,7 +1787,7 @@ main .news .news__item h2 {
 }
 
 main .news .news__item p {
-  color: #42515b;
+  color: #7b858c;
   text-transform: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
