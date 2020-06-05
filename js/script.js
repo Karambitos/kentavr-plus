@@ -112,10 +112,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
   });
 
-  "img[data-src], [data-srcset], .lazyBg" : {
-    "assets" : [ "/js/basics.js", "/js/lazyLoad.js" ],
-    "function" : function() {
-        new LazyLoad( { selector : "img[data-src], [data-srcset], .modalGallery, .lazyBg" } );
-    }
-    },
+  
 });
